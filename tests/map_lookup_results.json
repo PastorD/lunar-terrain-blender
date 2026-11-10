@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "scope": "Node VM executes the actual offline map script with a minimal DOM; not a browser rendering test",
+  "map_queries": [
+    {
+      "lat": 20.1908,
+      "lon": 30.7717,
+      "grid_m": 2,
+      "source": "APOLLO17_2M"
+    },
+    {
+      "lat": -41.6385,
+      "lon": 206.0148,
+      "grid_m": 4,
+      "source": "CHANGE6"
+    },
+    {
+      "lat": -89.438788,
+      "lon": 222.84498,
+      "grid_m": 2,
+      "source": "ESALL_CR1"
+    },
+    {
+      "lat": 18.5623,
+      "lon": 61.8103,
+      "grid_m": 3,
+      "source": "CRISHORSE01"
+    },
+    {
+      "lat": -69.373,
+      "lon": 32.319,
+      "grid_m": 3,
+      "source": "VIKRAMSITE1"
+    }
+  ],
+  "photo_cards": 13,
+  "additional_2026_paper": true
+}

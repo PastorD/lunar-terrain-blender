@@ -1,0 +1,28 @@
+{
+  "title": "LOLA LDEM_64 v3.1",
+  "projection": "cylindrical",
+  "west": 0.0,
+  "north": -40.96875,
+  "ppd": 64,
+  "scale": 1.0,
+  "posting_m": 473.8,
+  "periodic": true,
+  "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+  "source_rows": [
+    8382,
+    8468
+  ],
+  "source_columns": [
+    0,
+    23040
+  ],
+  "schema": 1,
+  "radius_m": 1737400.0,
+  "vertical_units": "metres above 1737400 m sphere",
+  "shape": [
+    86,
+    23040
+  ],
+  "sha256_pack": "3adb59afbea6103a6ab46c8003ee3a88a8abc31cb65cc52e8938f2016c53fb1a",
+  "use": "Lower resolution far terrain in the ChangE6 appearance study. Near detail is synthetic."
+}

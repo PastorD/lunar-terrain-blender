@@ -1,0 +1,199 @@
+{
+  "title": "Chandrayaan-3 public surface photos",
+  "checked": "2026-09-20",
+  "scope": "Reviewed public release inventory, checked 20 September 2026. Six direct lander-reference assets, two additional 2026 paper figures, and seven supporting surface assets. Annotated versions, crops and stereo composites are grouped rather than counted as independent viewpoints. The registered PRADAN archive was not exhaustively enumerated; this is not a claim to contain every raw mission frame.",
+  "images": [
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img1.jpeg.webp",
+      "title": "Vikram at 07:35 IST, 30 August 2023",
+      "note": "Two panels of the same nearby NavCam view, including instrument labels.",
+      "category": "lander",
+      "view_family": "0735",
+      "sha256": "9dbe11da5540afc503ea2ba91ad67dca36491d420d34e721e2a91159fd9dc610",
+      "bytes": 173224,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img2.png.webp",
+      "title": "Vikram at 11:04 IST, clean image",
+      "note": "Main grayscale reference, photographed by Pragyan from approximately 15 m.",
+      "category": "lander",
+      "view_family": "1104",
+      "sha256": "07a638e4a26ada15d87a1e792f5b03bb2f4ee8086e95916277cfeda396e17fab",
+      "bytes": 94994,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img4.png.webp",
+      "title": "Vikram at 11:04 IST, annotated",
+      "note": "Same view with timestamp and 69.373\u00b0 S, 32.319\u00b0 E coordinates.",
+      "category": "lander",
+      "view_family": "1104",
+      "sha256": "787a7068cda7aedc1146a8ae3a79d2f2aa4625df874a65977df5394649cb45c3",
+      "bytes": 101454,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/Ch3_lander_Right.jpg",
+      "title": "Vikram stereo anaglyph",
+      "note": "Red/cyan stereo composite, not a raw right-camera image despite the filename. Use for relief, not soil colour.",
+      "category": "lander",
+      "view_family": "1104_stereo",
+      "sha256": "c05c0e21ef9d96764bce94a8a38752d379f8ea82097a3a586b09971485fb351b",
+      "bytes": 1011925,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/Ch3_lander_Left.png",
+      "title": "Anaglyph explanatory poster",
+      "note": "Poster containing the anaglyph, not a raw left-camera frame.",
+      "category": "lander",
+      "view_family": "1104_stereo",
+      "sha256": "409b6c0ae26c3fd77ec41919f85482fc03207b8bb39fa51132cefc2525745f95",
+      "bytes": 1452965,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Latest/ch3_ohrc_img1.jpg",
+      "title": "Distant Vikram in the 2024 research figure",
+      "note": "Mixed figure: left panel is orbital, right panels are surface views. The lower-right panel contains Vikram beyond a ridge.",
+      "category": "lander",
+      "view_family": "distant_research",
+      "sha256": "a235721604f4b920d28227cdde298dc3bdf9874d8bb06e8f93256822cac8478b",
+      "bytes": 275857,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/ch3_Discovery_of_a_buried_crater_on_the_moon.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img3.png.webp",
+      "title": "Retraced rover path, 27 August 2023",
+      "note": "Rover tracks, fine soil and low rolling terrain.",
+      "category": "surface",
+      "view_family": "tracks",
+      "sha256": "d063fd528c492214528fac848f0b8d7655c91d124425f5021c571c0f7de1892c",
+      "bytes": 101328,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img5.png.webp",
+      "title": "Crater encountered, 27 August 2023",
+      "note": "NavCam view of the approximately 4 m crater that Pragyan avoided.",
+      "category": "surface",
+      "view_family": "crater",
+      "sha256": "04ccf29bc80d2fe3c614b3ba5f833fca887d32494fc925d68891eebdee88c623",
+      "bytes": 84348,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/R_img10.jpeg.webp",
+      "title": "Post-touchdown ground view",
+      "note": "Lander leg/foot and shadow are visible; surface context, not a complete-lander portrait.",
+      "category": "surface",
+      "view_family": "touchdown",
+      "sha256": "65a5572287861906f79a30bb03e7432bcfd5d6be3026bdfdb18a00a2ecad946e",
+      "bytes": 112212,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/hoprampimg1.png.webp",
+      "title": "Ramp before and after the hop",
+      "note": "Lander Imager-1 panels. Different colour response; not the neutral NavCam colour target.",
+      "category": "surface",
+      "view_family": "hop_ramp",
+      "sha256": "c480afe271c0a0b4de4edd4a21460e3ff62a40adba7a2ead797a313d1d4442d7",
+      "bytes": 151396,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/hoprampimg2.png.webp",
+      "title": "Front view before and after the hop",
+      "note": "Two Lander Imager-1 views of disturbed soil.",
+      "category": "surface",
+      "view_family": "hop_front",
+      "sha256": "2e885a17ac4321f7e4c3e69e065bffa3d6843737c4a23b3b9c294b2c8b280dbd",
+      "bytes": 161314,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/Rover_Inplace_turn.webp",
+      "title": "Pragyan turning on the surface",
+      "note": "View from the lander showing rover and near-surface context.",
+      "category": "surface",
+      "view_family": "turn",
+      "sha256": "4ec86f3d22d976c5255f5fe63af97e237cb97a419593e3807dc7c799f1d60583",
+      "bytes": 84882,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    },
+    {
+      "url": "https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/Rover_first_movement_with_Indian_emblem_and_flag.webp",
+      "title": "Pragyan rolling down the ramp",
+      "note": "Rover, ramp and near-lander ground.",
+      "category": "surface",
+      "view_family": "ramp",
+      "sha256": "0f1789d3fc8dff049a11d862af6283d47fa18ef1a3af87ad67e2855ec3de7d1a",
+      "bytes": 124554,
+      "credit": "ISRO",
+      "source_page": "https://www.isro.gov.in/chandrayaan3_gallery.html"
+    }
+  ],
+  "additional_sources": [
+    {
+      "title": "2026 paper: additional surface stereo views",
+      "url": "https://arxiv.org/pdf/2603.26802#page=2",
+      "note": "Relia et al., Figures 2 and 3: processed NavCam views of the distant lander with detection overlays. Left/right panels form stereo pairs. Figure 5 is a derived point cloud, not a photograph."
+    },
+    {
+      "title": "ISRO mission gallery",
+      "url": "https://www.isro.gov.in/chandrayaan3_gallery.html",
+      "note": "Primary releases for the images above."
+    },
+    {
+      "title": "2024 buried-crater research update",
+      "url": "https://www.isro.gov.in/ch3_Discovery_of_a_buried_crater_on_the_moon.html",
+      "note": "Additional distant Vikram and traverse images."
+    },
+    {
+      "title": "LPSC 2024 plume paper, Figure 5",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2024/pdf/1411.pdf",
+      "note": "Repeats the familiar NavCam anaglyph; other figures are orbital or descent views."
+    },
+    {
+      "title": "LPSC 2025 Lander Imager observations",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/2287.pdf",
+      "note": "The twelve selected images are orbital/pre-landing, excluded from the surface set."
+    },
+    {
+      "title": "Commons: Chandrayaan-3 on the Moon",
+      "url": "https://commons.wikimedia.org/wiki/Category:Chandrayaan-3_on_the_Moon",
+      "note": "28 media entries reviewed: mirrors, crops, annotated versions, stereo derivatives, videos and orbital images; not 28 independent lander photographs."
+    },
+    {
+      "title": "PRADAN mission archive",
+      "url": "https://pradan.issdc.gov.in/ch3/",
+      "note": "Register/sign in for the larger archive. NavCam raw/calibrated products: PNG + XML. Lander/Rover Imager products: JPG + XML."
+    },
+    {
+      "title": "PRADAN FAQ",
+      "url": "https://pradan.issdc.gov.in/ch3/faq.xhtml",
+      "note": "Date folders, product names, manuals and bulk download instructions."
+    },
+    {
+      "title": "ISRO science-data release",
+      "url": "https://www.isro.gov.in/Release_of_Chandrayaan-3_science_data_to_the_Scientific_Community.html",
+      "note": "Public PDS4 release, 23 August 2024, with registration for PRADAN access."
+    }
+  ],
+  "exclusions": "R_img6\u20139: far-side orbital images; R_img11: descent imagery; ShivShakti_point: orbital landing-site image. Launch photographs, ground tests and artwork are excluded. Video frames are not counted as independent still photographs.",
+  "rights": "Original mission photographs remain with their credited owners. Links and checksums only; photographs are not bundled or relicensed as GPL."
+}

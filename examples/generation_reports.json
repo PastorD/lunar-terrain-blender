@@ -1,0 +1,116 @@
+{
+  "Apollo17_Surface": {
+    "dem_sources_at_origin": [
+      {
+        "title": "LOLA LDEM_16 v3.1",
+        "posting_m": 1895.21,
+        "centre_weight": 1.0,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_16.IMG"
+      },
+      {
+        "title": "Apollo 17 / SLDEM2015 512 ppd",
+        "posting_m": 59.2253,
+        "centre_weight": 1.0,
+        "source_url": "https://imbrium.mit.edu/DATA/SLDEM2015/TILES/FLOAT_IMG/SLDEM2015_512_00N_30N_000_045_FLOAT.IMG"
+      }
+    ],
+    "warnings": [],
+    "vertices": 1219665,
+    "triangles": 2439056,
+    "craters": 1365,
+    "artist_micro_craters": 1480,
+    "latitude": 20.190799713134766,
+    "longitude_east": 30.771699905395508,
+    "origin_elevation_m": -2627.5011886467237,
+    "near_spacing_m": 0.10000000149011612,
+    "outer_radius_m": 20000.0,
+    "seed": 170017,
+    "detail_focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "rocks": 34109,
+    "rock_coverage_k": 0.01,
+    "rock_zones": [
+      {
+        "min_diameter_m": 0.02500000037252903,
+        "max_diameter_m": 0.2,
+        "radius_m": 42.0,
+        "number_density_per_m2": 0.7306444879463734,
+        "instances": 4075
+      },
+      {
+        "min_diameter_m": 0.2,
+        "max_diameter_m": 1.5,
+        "radius_m": 180.0,
+        "number_density_per_m2": 0.047970896639748885,
+        "instances": 4853
+      },
+      {
+        "min_diameter_m": 0.005,
+        "max_diameter_m": 0.025,
+        "radius_m": 20.0,
+        "number_density_per_m2": 20.0,
+        "instances": 25181,
+        "basis": "Artist-authored, not a measured site population"
+      }
+    ]
+  },
+  "Apollo17_Outpost": {
+    "dem_sources_at_origin": [
+      {
+        "title": "LOLA LDEM_16 v3.1",
+        "posting_m": 1895.21,
+        "centre_weight": 1.0,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_16.IMG"
+      },
+      {
+        "title": "Apollo 17 / SLDEM2015 512 ppd",
+        "posting_m": 59.2253,
+        "centre_weight": 1.0,
+        "source_url": "https://imbrium.mit.edu/DATA/SLDEM2015/TILES/FLOAT_IMG/SLDEM2015_512_00N_30N_000_045_FLOAT.IMG"
+      }
+    ],
+    "warnings": [],
+    "vertices": 1219665,
+    "triangles": 2439056,
+    "craters": 1365,
+    "artist_micro_craters": 1480,
+    "latitude": 20.190799713134766,
+    "longitude_east": 30.771699905395508,
+    "origin_elevation_m": -2627.5011886467237,
+    "near_spacing_m": 0.10000000149011612,
+    "outer_radius_m": 20000.0,
+    "seed": 170017,
+    "detail_focus_xy_m": [
+      13.0,
+      -43.0
+    ],
+    "rocks": 34109,
+    "rock_coverage_k": 0.01,
+    "rock_zones": [
+      {
+        "min_diameter_m": 0.02500000037252903,
+        "max_diameter_m": 0.2,
+        "radius_m": 42.0,
+        "number_density_per_m2": 0.7306444879463734,
+        "instances": 4075
+      },
+      {
+        "min_diameter_m": 0.2,
+        "max_diameter_m": 1.5,
+        "radius_m": 180.0,
+        "number_density_per_m2": 0.047970896639748885,
+        "instances": 4853
+      },
+      {
+        "min_diameter_m": 0.005,
+        "max_diameter_m": 0.025,
+        "radius_m": 20.0,
+        "number_density_per_m2": 20.0,
+        "instances": 25181,
+        "basis": "Artist-authored, not a measured site population"
+      }
+    ]
+  }
+}

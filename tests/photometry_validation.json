@@ -1,0 +1,41 @@
+{
+  "blender": "5.2.1 LTS",
+  "test": "Identical planar panels, constant normal-incidence Sun, orthographic emergence/phase sweep",
+  "max_relative_ratio_error": 4.355789710347977e-05,
+  "passed": true,
+  "rows": [
+    {
+      "phase_deg": 0,
+      "linear_on": 0.0364522859454155,
+      "linear_off": 0.012180308811366558,
+      "render_ratio": 2.992722640283023,
+      "analytic_ratio": 2.992722941281939,
+      "relative_error": 1.0057694010430553e-07
+    },
+    {
+      "phase_deg": 0.25,
+      "linear_on": 0.035728875547647476,
+      "linear_off": 0.012180238962173462,
+      "render_ratio": 2.9333476673656294,
+      "analytic_ratio": 2.9332199024749355,
+      "relative_error": 4.355789710347977e-05
+    },
+    {
+      "phase_deg": 10,
+      "linear_on": 0.02282974123954773,
+      "linear_off": 0.012074743397533894,
+      "render_ratio": 1.8907019791584476,
+      "analytic_ratio": 1.8907011524170583,
+      "relative_error": 4.372670891384548e-07
+    },
+    {
+      "phase_deg": 60,
+      "linear_on": 0.01232884731143713,
+      "linear_off": 0.010183518752455711,
+      "render_ratio": 1.2106667264165525,
+      "analytic_ratio": 1.2106663924492964,
+      "relative_error": 2.7585407355398266e-07
+    }
+  ],
+  "limits": "Tests this node implementation against its stated approximation; does not validate parameters against lunar photometric measurements."
+}

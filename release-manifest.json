@@ -1,0 +1,238 @@
+{
+  "version": "1.5.0",
+  "repository": "PastorD/lunar-terrain-blender",
+  "extension_sha256": "99e9743d6767e78ddf467f64dbf6c9a195eb3df90bd5c6d4d9bba18eccfba8b3",
+  "data_archive": {
+    "name": "lunar-terrain-data-1.5.0.zip",
+    "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/lunar-terrain-data-1.5.0.zip",
+    "sha256": "acc740d11f72f2120d51c86e0270d77b61c966b0bd503487fbdbba8108165c04",
+    "bytes": 144419758
+  },
+  "data_files": [
+    {
+      "path": "lunar_terrain/data/Apollo17_SLDEM_512.npz",
+      "sha256": "f7af3ad29559607cb226b048a03cbd71e5b33b7841e6f231f2617dd44964feb2",
+      "bytes": 7280277
+    },
+    {
+      "path": "lunar_terrain/data/CE6_CONTEXT_SOURCE.json",
+      "sha256": "d214784a9ecde515ace324f02d9239c54000db3ce23161436de9786e4b992886",
+      "bytes": 659
+    },
+    {
+      "path": "lunar_terrain/data/CE6_LOLA_64_context.npz",
+      "sha256": "3adb59afbea6103a6ab46c8003ee3a88a8abc31cb65cc52e8938f2016c53fb1a",
+      "bytes": 4358404
+    },
+    {
+      "path": "lunar_terrain/data/CE6_reference_craters.csv",
+      "sha256": "7e0e86a0254bec4e79d578e06c2421bc972bdfe27371c78449d251fc4a162a0a",
+      "bytes": 31239
+    },
+    {
+      "path": "lunar_terrain/data/Chandrayaan3_References.html",
+      "sha256": "914f09ad99abfe42774942fffde993102b234780ddaf0ff496ae360fd112312f",
+      "bytes": 12523
+    },
+    {
+      "path": "lunar_terrain/data/Chandrayaan3_References.json",
+      "sha256": "66172d6758ce77903ca299f247c7dbdcaefdc054d4a4a293f97709977b312043",
+      "bytes": 9872
+    },
+    {
+      "path": "lunar_terrain/data/LOLA_80m_south_pole_100km.npz",
+      "sha256": "25820165541f06ccdf9e22a0403c13938ec9612a763c6d557ce409e3840cd355",
+      "bytes": 5689478
+    },
+    {
+      "path": "lunar_terrain/data/LOLA_LDEM_16.LBL",
+      "sha256": "9aef29463ccc6ed3a3fbe0df3ecd830a99c69e16b564f455507dee2697096579",
+      "bytes": 5121
+    },
+    {
+      "path": "lunar_terrain/data/LOLA_global_16ppd.npz",
+      "sha256": "1525f93ddcf02915e02c9670fdf86750b16f43f0abb9efefa9963fc6c0947395",
+      "bytes": 30012652
+    },
+    {
+      "path": "lunar_terrain/data/Lunar_DEM_Map.html",
+      "sha256": "a27d76e02c09bd99f459e0f5a0c8ce263e0c241b4e7fe0530815470137b75280",
+      "bytes": 10607411
+    },
+    {
+      "path": "lunar_terrain/data/Lunar_DEM_Map.png",
+      "sha256": "a36669061bc6eb58ccac0c22343735608b0d1e9c61bc6914cc171a091a1c6c7b",
+      "bytes": 1090926
+    },
+    {
+      "path": "lunar_terrain/data/PROVENANCE.md",
+      "sha256": "525d02193091f8f1abd7c56e1b3e4d1bebc99a7e6d3cbbccfee3059c6994c128",
+      "bytes": 944
+    },
+    {
+      "path": "lunar_terrain/data/SLDEM2015_512.LBL",
+      "sha256": "575e055a07344769d74546d3fdbc8c10c2704dd684eed17babc890429ee6412b",
+      "bytes": 4692
+    },
+    {
+      "path": "lunar_terrain/data/Site01_final_adj_5mpp_surf.npz",
+      "sha256": "384180c46c1480144d57fa7aa294c1137a05ea61bb783e3a4325490a3239c940",
+      "bytes": 34387545
+    },
+    {
+      "path": "lunar_terrain/data/dem_catalog.geojson",
+      "sha256": "af5be715038a447b87a4c650c12880d8dd8d05d2b049c8fb00dba384b3a090ba",
+      "bytes": 9146803
+    },
+    {
+      "path": "lunar_terrain/data/hapke_provenance.json",
+      "sha256": "d6e959a4e2c7b10b547b57f48b6f364bcab9415511ce5cab288b4acc3c870e2e",
+      "bytes": 1454
+    },
+    {
+      "path": "lunar_terrain/data/native_3d8ac9b91300d273267e916a.npz",
+      "sha256": "ad02dcb207692fd03a75262183e256558446857363b727ecab2b302f1f3e0512",
+      "bytes": 12771504
+    },
+    {
+      "path": "lunar_terrain/data/native_548194278aecbdcff681c28d.npz",
+      "sha256": "61eb00eb63d8cb3063a4d42efe2603b78ad3752a3de2d6f9f486026ce5b4a870",
+      "bytes": 7000795
+    },
+    {
+      "path": "lunar_terrain/data/native_830fa43805986d65546c48a8.npz",
+      "sha256": "4202399264b8977658673696ea00568b86ed7a8d82e41575b0e3022529d74141",
+      "bytes": 9619593
+    },
+    {
+      "path": "lunar_terrain/data/native_af01321a692fe403cf77872e.npz",
+      "sha256": "04444b2acf2ee128322c3c500d032d9a49e34f47fe8d33bd45b12b402840e6fa",
+      "bytes": 6153455
+    },
+    {
+      "path": "lunar_terrain/data/native_d4d6bea3608e610784b4e750.npz",
+      "sha256": "d972bb0e0f179152a7e51cb214496c023c3aca6da6ea9a8991540b15f7235666",
+      "bytes": 3151228
+    },
+    {
+      "path": "lunar_terrain/data/photometry/WAC_Hapke_566nm.npz",
+      "sha256": "69cbb37d0f5145b58f8ef8af5a9979eeeb2a6ac7df0e67f62c872f49e7b68871",
+      "bytes": 858329
+    },
+    {
+      "path": "lunar_terrain/data/provenance.json",
+      "sha256": "307a2eda642f975ca3b12b94c5e7998896e5d28ca7d92212ca29d44cad5a419e",
+      "bytes": 15544
+    },
+    {
+      "path": "lunar_terrain/data/region_6d805893291a73856a02.npz",
+      "sha256": "596b67970926389ecf11819e5e633c6a2d494cf98e37e0733d73aa35da311c2b",
+      "bytes": 7073736
+    },
+    {
+      "path": "lunar_terrain/data/region_9e5a810189fbcb24de0f.npz",
+      "sha256": "1f5da87f95bc2cc4e5ad6ca3e3d8f1d4c44168820ad1baa34448c40d3f835f91",
+      "bytes": 2605363
+    },
+    {
+      "path": "lunar_terrain/data/region_ccdf41850a4953a64065.npz",
+      "sha256": "31f752c431372b7e84537a31e30ca08c758689163b9affdd895505b19c52584a",
+      "bytes": 6843846
+    },
+    {
+      "path": "lunar_terrain/data/surface_reference.json",
+      "sha256": "ebe953973c8879d9130649778200844a4fb217e6cc7ad9578ecf647e92e1894b",
+      "bytes": 1410
+    },
+    {
+      "path": "lunar_terrain/data/url_66d0113349c273909528.json",
+      "sha256": "67d0fa1f1cde26ed3c0759a38d2a21e3b132cd6a7e1012b8dcfa8f1e814ab428",
+      "bytes": 142
+    },
+    {
+      "path": "lunar_terrain/data/url_8eb30de32360f22b4568.json",
+      "sha256": "179e67504669b88e92a4d5d84bc66392874ebcf1c2d4ffda9c9d42837dcc9622",
+      "bytes": 142
+    }
+  ],
+  "assets": [
+    {
+      "name": "Apollo17_Outpost.blend",
+      "bytes": 62004550,
+      "sha256": "caa0525c69116f7a4a3fc98ba01c74f40c234ab74cfb3a4b94058dcf1dcfdae3",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Outpost.blend"
+    },
+    {
+      "name": "Apollo17_Outpost.png",
+      "bytes": 1638943,
+      "sha256": "8089d09612b1cd32ac90633f9bce07a9936109d29ec471e21fa1d2bcb3b51233",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Outpost.png"
+    },
+    {
+      "name": "Apollo17_Surface.blend",
+      "bytes": 59418194,
+      "sha256": "783d685ee45cf1dfe3a2f3a15d1af142b02b8929287bbaf62b49a2a8f87f918e",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Surface.blend"
+    },
+    {
+      "name": "BlueGhost_Surface.blend",
+      "bytes": 27084123,
+      "sha256": "af7de0b7d750aaa174e8c5ff19458bdb2e75689d69339a7ed92fe316d7415628",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/BlueGhost_Surface.blend"
+    },
+    {
+      "name": "BlueGhost_Surface.png",
+      "bytes": 933769,
+      "sha256": "3ede0a7aaa05e499d06436fa99a6b99fecae218c87fd2a1c9a678e5b81aa102b",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/BlueGhost_Surface.png"
+    },
+    {
+      "name": "Chandrayaan3_Surface.blend",
+      "bytes": 27101822,
+      "sha256": "f58718b91fc533083fe7310e0d5d3d9bc5d0cc31553ecf002ca9594bf6785548",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Chandrayaan3_Surface.blend"
+    },
+    {
+      "name": "Chandrayaan3_Surface.png",
+      "bytes": 1006600,
+      "sha256": "91768c467231706bd9a225fb839427c272b880e13b2724acc76b2e27c57bf5ba",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Chandrayaan3_Surface.png"
+    },
+    {
+      "name": "ChangE6_Surface.blend",
+      "bytes": 59210683,
+      "sha256": "597f5cfe27efe44a05f124e8fdb58d8dc72d9920f9b67840b30c6d89a62501f1",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/ChangE6_Surface.blend"
+    },
+    {
+      "name": "ChangE6_Surface.png",
+      "bytes": 1212643,
+      "sha256": "444e1285c9034754f9cc043c07d53cf8bf69fb607ca674a4674ff3be2773eefb",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/ChangE6_Surface.png"
+    },
+    {
+      "name": "Hapke_Opposition_Check.blend",
+      "bytes": 130310,
+      "sha256": "dfb0d2f2020a7686773b6d00c6ee963a389d8deb95f05a89b2cda7ac34a424b6",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Hapke_Opposition_Check.blend"
+    },
+    {
+      "name": "Rock_Detail.blend",
+      "bytes": 4370378,
+      "sha256": "fd99e651d5d5c396d4807008c77517902ec76895b7785c3d47796bdfcf2f603e",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Rock_Detail.blend"
+    },
+    {
+      "name": "lunar-terrain-data-1.5.0.zip",
+      "bytes": 144419758,
+      "sha256": "acc740d11f72f2120d51c86e0270d77b61c966b0bd503487fbdbba8108165c04",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/lunar-terrain-data-1.5.0.zip"
+    },
+    {
+      "name": "lunar_terrain-1.5.0.zip",
+      "bytes": 144479062,
+      "sha256": "99e9743d6767e78ddf467f64dbf6c9a195eb3df90bd5c6d4d9bba18eccfba8b3",
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/lunar_terrain-1.5.0.zip"
+    }
+  ]
+}

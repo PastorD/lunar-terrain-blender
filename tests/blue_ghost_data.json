@@ -1,0 +1,62 @@
+{
+  "location": [
+    18.5623,
+    61.8103
+  ],
+  "origin_elevation_m": -3649.8572507303275,
+  "report": {
+    "latitude": 18.5623,
+    "longitude_east": 61.8103,
+    "available_at_origin": {
+      "id": "CRISHORSE01",
+      "title": "LROC NAC CRISHORSE01",
+      "kind": "nac",
+      "posting_m": 3.0,
+      "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CRISHORSE01",
+      "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+      "completion": "2022-03-23"
+    },
+    "loaded_at_origin": [
+      {
+        "title": "LROC NAC CRISHORSE01",
+        "posting_m": 2.999999999999,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "focus_latitude": 18.5623,
+    "focus_longitude": 61.8103,
+    "loaded_at_focus": [
+      {
+        "title": "LROC NAC CRISHORSE01",
+        "posting_m": 2.999999999999,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "radius_m": 20000,
+    "perimeter_grids_m": [
+      59.2253
+    ],
+    "perimeter_samples": 24,
+    "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+  },
+  "photometry": {
+    "w": 0.1966581642627716,
+    "b": 0.2586585581302643,
+    "c": 0.11911465972661972,
+    "B_CB0": 0.0,
+    "h_CB": 1.0,
+    "B_SH0": 2.1291890144348145,
+    "h_SH": 0.06456484645605087,
+    "theta": 23.656600952148438,
+    "phi": 0.0
+  },
+  "landing_site_source": "https://lroc.im-ldi.com/images/1407"
+}

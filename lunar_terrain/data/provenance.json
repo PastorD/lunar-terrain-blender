@@ -1,0 +1,469 @@
+{
+  "prepared_for": "Lunar Terrain 1.5.0",
+  "data_packs": [
+    {
+      "file": "Apollo17_SLDEM_512.npz",
+      "bytes": 7280277,
+      "sha256": "f7af3ad29559607cb226b048a03cbd71e5b33b7841e6f231f2617dd44964feb2",
+      "shape": [
+        1352,
+        1548
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "3ac407b9f7f750760062464dae3a1ac735c450683ec8c7e09c4a241dbb2ca568",
+      "metadata": {
+        "title": "Apollo 17 / SLDEM2015 512 ppd",
+        "projection": "cylindrical",
+        "west": 29.259765625,
+        "north": 21.51171875,
+        "ppd": 512.0,
+        "scale": 1.0,
+        "posting_m": 59.2253,
+        "periodic": false,
+        "source_url": "https://imbrium.mit.edu/DATA/SLDEM2015/TILES/FLOAT_IMG/SLDEM2015_512_00N_30N_000_045_FLOAT.IMG",
+        "source_rows": [
+          4346,
+          5698
+        ],
+        "source_columns": [
+          14981,
+          16529
+        ],
+        "reference_doi": "10.1016/j.icarus.2015.07.039",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "CE6_LOLA_64_context.npz",
+      "bytes": 4358404,
+      "sha256": "3adb59afbea6103a6ab46c8003ee3a88a8abc31cb65cc52e8938f2016c53fb1a",
+      "shape": [
+        86,
+        23040
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "8ef8e65876ef31f6f6901b263e2fea052a86df9859fc65731d57a8bb2fc655ed",
+      "metadata": {
+        "title": "LOLA LDEM_64 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": -40.96875,
+        "ppd": 64,
+        "scale": 1.0,
+        "posting_m": 473.8,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+        "source_rows": [
+          8382,
+          8468
+        ],
+        "source_columns": [
+          0,
+          23040
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "LOLA_80m_south_pole_100km.npz",
+      "bytes": 5689478,
+      "sha256": "25820165541f06ccdf9e22a0403c13938ec9612a763c6d557ce409e3840cd355",
+      "shape": [
+        1250,
+        1250
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "d1b7e3f614ca7a7d3f8c352a763b56a9a9cb95eebf872432542d0ff3fcb4a5f1",
+      "metadata": {
+        "title": "LOLA adjusted south pole, 80 m grid",
+        "projection": "south_polar",
+        "west": -60480.0,
+        "north": 37600.0,
+        "pixel_m": 80.0,
+        "posting_m": 80.0,
+        "scale": 1.0,
+        "periodic": false,
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_ADJ.TIF",
+        "source_sha256": "65e45963bc1ca9808720db56f922d86b367af0f9f910b6eef1f4f6d9ff6629e7",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "LOLA_global_16ppd.npz",
+      "bytes": 30012652,
+      "sha256": "1525f93ddcf02915e02c9670fdf86750b16f43f0abb9efefa9963fc6c0947395",
+      "shape": [
+        2880,
+        5760
+      ],
+      "dtype": "int16",
+      "elevation_array_sha256": "a511e40d7a3ea3275945b4da2a1df377133264fab0be94b7434b1cf8907254cb",
+      "metadata": {
+        "title": "LOLA LDEM_16 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": 90.0,
+        "ppd": 16.0,
+        "scale": 0.5,
+        "posting_m": 1895.21,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_16.IMG",
+        "source_sha256": "a511e40d7a3ea3275945b4da2a1df377133264fab0be94b7434b1cf8907254cb",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "Site01_final_adj_5mpp_surf.npz",
+      "bytes": 34387545,
+      "sha256": "384180c46c1480144d57fa7aa294c1137a05ea61bb783e3a4325490a3239c940",
+      "shape": [
+        3200,
+        3200
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "29934487b9f9e05602e70882c764b15c1af83c6668b22c850930129331c7ff29",
+      "metadata": {
+        "title": "LOLA adjusted south pole Site 01, 5 m grid",
+        "projection": "south_polar",
+        "west": -19000.0,
+        "north": -4000.0,
+        "pixel_m": 5.0,
+        "posting_m": 5.0,
+        "scale": 1.0,
+        "periodic": false,
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site01/Site01_final_adj_5mpp_surf.tif",
+        "source_sha256": "3ba7b97cb00a2bcf21189c3aeb535f65afc21207154ab9f0d43c5bdc1f7e747e",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_3d8ac9b91300d273267e916a.npz",
+      "bytes": 12771504,
+      "sha256": "ad02dcb207692fd03a75262183e256558446857363b727ecab2b302f1f3e0512",
+      "shape": [
+        2265,
+        2267
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "90bc3432e37b844e1b50da83c79447514b1aa3844ef6cde84991ef3f9de904b8",
+      "metadata": {
+        "projection": "eqc",
+        "pixel_m": 2.0000000000006,
+        "posting_m": 2.0000000000006,
+        "width": 2267,
+        "height": 2265,
+        "west": -4254472.000001276,
+        "north": 614518.0000001843,
+        "standard_parallel": 20.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 180.0,
+        "scale": 1.0,
+        "title": "LROC NAC APOLLO17_2M",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_APOLLO17_2M",
+        "source_id": "APOLLO17_2M",
+        "source_rows": [
+          7717,
+          9982
+        ],
+        "source_columns": [
+          5721,
+          7988
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_548194278aecbdcff681c28d.npz",
+      "bytes": 7000795,
+      "sha256": "61eb00eb63d8cb3063a4d42efe2603b78ad3752a3de2d6f9f486026ce5b4a870",
+      "shape": [
+        1531,
+        1531
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "f27952207fe7a86ba24466d47a17035dd00192085d5c251fa5fe6d2336948131",
+      "metadata": {
+        "projection": "south_polar",
+        "pixel_m": 2.999999999999,
+        "posting_m": 2.999999999999,
+        "width": 1531,
+        "height": 1531,
+        "west": -2093.9999999990014,
+        "north": 614210.9999997952,
+        "standard_parallel": -69.3,
+        "origin_latitude": 0.0,
+        "central_longitude": 32.3,
+        "scale": 1.0,
+        "title": "LROC NAC VIKRAMSITE1",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/VIKRAMSITE1/NAC_DTM_VIKRAMSITE1_E693S0323.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_VIKRAMSITE1",
+        "source_id": "VIKRAMSITE1",
+        "source_rows": [
+          8016,
+          9547
+        ],
+        "source_columns": [
+          2983,
+          4514
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_830fa43805986d65546c48a8.npz",
+      "bytes": 9619593,
+      "sha256": "4202399264b8977658673696ea00568b86ed7a8d82e41575b0e3022529d74141",
+      "shape": [
+        2163,
+        2036
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "0471427bab0bd2922056c81a4c02c02d8830d554eb746e02ae6804deeaf4af0c",
+      "metadata": {
+        "projection": "south_polar",
+        "pixel_m": 2.0,
+        "posting_m": 2.0,
+        "width": 2036,
+        "height": 2163,
+        "west": -13381.0,
+        "north": -10213.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "scale": 1.0,
+        "title": "LROC NAC ESALL_CR1",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_ESALL_CR1",
+        "source_id": "ESALL_CR1",
+        "source_rows": [
+          337,
+          2500
+        ],
+        "source_columns": [
+          0,
+          2036
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_af01321a692fe403cf77872e.npz",
+      "bytes": 6153455,
+      "sha256": "04444b2acf2ee128322c3c500d032d9a49e34f47fe8d33bd45b12b402840e6fa",
+      "shape": [
+        1532,
+        1536
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "7f4ae62d32f616dc0a79e023e808235bff12ca1950ddc31c8b0bc1106321b1fd",
+      "metadata": {
+        "projection": "eqc",
+        "pixel_m": 2.999999999999,
+        "posting_m": 2.999999999999,
+        "width": 1536,
+        "height": 1532,
+        "west": -3410810.999998863,
+        "north": 565160.9999998116,
+        "standard_parallel": 18.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 180.0,
+        "scale": 1.0,
+        "title": "LROC NAC CRISHORSE01",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CRISHORSE01",
+        "source_id": "CRISHORSE01",
+        "source_rows": [
+          2044,
+          3576
+        ],
+        "source_columns": [
+          2213,
+          3749
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_d4d6bea3608e610784b4e750.npz",
+      "bytes": 3151228,
+      "sha256": "d972bb0e0f179152a7e51cb214496c023c3aca6da6ea9a8991540b15f7235666",
+      "shape": [
+        1165,
+        1159
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "29c4c9373c68aacb0cc10c323888f61816ef806985e6737c1f15f15ba5e62ed9",
+      "metadata": {
+        "projection": "eqc",
+        "pixel_m": 3.9999999999986002,
+        "posting_m": 3.9999999999986002,
+        "width": 1159,
+        "height": 1165,
+        "west": 583915.9999997956,
+        "north": -1260287.999999599,
+        "standard_parallel": -42.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 180.0,
+        "scale": 1.0,
+        "title": "LROC NAC CHANGE6",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CHANGE6",
+        "source_id": "CHANGE6",
+        "source_rows": [
+          1516,
+          2681
+        ],
+        "source_columns": [
+          1388,
+          2547
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "region_6d805893291a73856a02.npz",
+      "bytes": 7073736,
+      "sha256": "596b67970926389ecf11819e5e633c6a2d494cf98e37e0733d73aa35da311c2b",
+      "shape": [
+        144,
+        23040
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "97ccd08cf74b1f5a9a273a690fcaaf9ebe10162fa7b7f89c65214ce028ac2c70",
+      "metadata": {
+        "title": "LOLA LDEM_64 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": -68.25,
+        "ppd": 64,
+        "scale": 1.0,
+        "posting_m": 473.8,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+        "source_rows": [
+          10128,
+          10272
+        ],
+        "source_columns": [
+          0,
+          23040
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "region_9e5a810189fbcb24de0f.npz",
+      "bytes": 2605363,
+      "sha256": "1f5da87f95bc2cc4e5ad6ca3e3d8f1d4c44168820ad1baa34448c40d3f835f91",
+      "shape": [
+        916,
+        970
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "0f92e59d992954612fad8d7697d1b474a3c5f0cd37e188dc80b2c0cd32d62a64",
+      "metadata": {
+        "title": "SLDEM2015_512_00N_30N_045_090_FLOAT",
+        "projection": "cylindrical",
+        "west": 60.86328125,
+        "north": 19.45703125,
+        "ppd": 512,
+        "scale": 1.0,
+        "posting_m": 59.2253,
+        "periodic": false,
+        "source_url": "https://imbrium.mit.edu/DATA/SLDEM2015/TILES/FLOAT_IMG/SLDEM2015_512_00N_30N_045_090_FLOAT.IMG",
+        "source_rows": [
+          5398,
+          6314
+        ],
+        "source_columns": [
+          8122,
+          9092
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "region_ccdf41850a4953a64065.npz",
+      "bytes": 6843846,
+      "sha256": "31f752c431372b7e84537a31e30ca08c758689163b9affdd895505b19c52584a",
+      "shape": [
+        144,
+        23040
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "cac243288d6883d7a343e5ce130e856c27a55f7ed1418a9447007299d1dacbc6",
+      "metadata": {
+        "title": "LOLA LDEM_64 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": 19.6875,
+        "ppd": 64,
+        "scale": 1.0,
+        "posting_m": 473.8,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+        "source_rows": [
+          4500,
+          4644
+        ],
+        "source_columns": [
+          0,
+          23040
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    }
+  ],
+  "catalog": {
+    "file": "dem_catalog.geojson",
+    "sha256": "af5be715038a447b87a4c650c12880d8dd8d05d2b049c8fb00dba384b3a090ba",
+    "features": 687
+  }
+}

@@ -1,0 +1,24 @@
+schema_version = "1.0.0"
+id = "lunar_terrain"
+version = "1.5.0"
+name = "Lunar Terrain"
+tagline = "Real lunar DEMs, seamless terrain detail and Hapke lighting"
+maintainer = "Lunar Terrain contributors"
+type = "add-on"
+tags = ["Add Mesh", "Lighting"]
+blender_version_min = "5.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+[permissions]
+network = "Download public lunar elevation data for the selected location"
+files = "Read DEM packs and cache downloaded lunar elevation"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "*.pyc",
+  "*.pyo",
+  "/.git/",
+  "*.zip",
+  "*.partial",
+  ".DS_Store",
+]

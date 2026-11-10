@@ -1,0 +1,9 @@
+{
+  "blender": "5.2.1 LTS",
+  "version": "1.3.0",
+  "wheel_module_alias_differs": true,
+  "data_type": "_RestrictData",
+  "context_type": "_RestrictContext",
+  "error": "'_RestrictData' object has no attribute 'scenes'",
+  "exception": "AttributeError"
+}

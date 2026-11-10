@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.blend
+*.blend[0-9]
+*.npz
+*.zip
+*.partial
+dist/
+.venv/
+/lunar_terrain/data/dem_catalog.geojson
+/lunar_terrain/data/Lunar_DEM_Map.html
+/lunar_terrain/data/Lunar_DEM_Map.png
+/examples/renders/

@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "preset": "BLUEGHOST",
+  "coordinates": [
+    18.562299728393555,
+    61.810298919677734
+  ],
+  "photometry": {
+    "w": 0.1966581642627716,
+    "b": 0.2586585581302643,
+    "c": 0.11911465972661972,
+    "B_CB0": 0.0,
+    "h_CB": 1.0,
+    "B_SH0": 2.1291890144348145,
+    "h_SH": 0.06456484645605087,
+    "theta": 23.656600952148438,
+    "phi": 0.0
+  },
+  "appearance": {
+    "latitude": 18.5623,
+    "longitude": 61.8103,
+    "exposure": 4.7,
+    "soil_tint": [
+      0.5,
+      0.64,
+      1.0
+    ],
+    "albedo_variation": 0.06,
+    "rock_albedo_ratio": 1.04
+  },
+  "sun_elevation": 2.5,
+  "sun_azimuth": 90.0,
+  "camera_heading": 270.0,
+  "camera_pitch": 1.0,
+  "camera_lens_mm": 20.0,
+  "camera_height_m": 2.0,
+  "mesh_and_camera_preserved_by_appearance": true,
+  "hapke_materials": 2,
+  "generation": {
+    "dem_sources_at_origin": [
+      {
+        "title": "LROC NAC CRISHORSE01",
+        "posting_m": 2.999999999999,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "warnings": [],
+    "dem_resolution": {
+      "latitude": 18.562299728393555,
+      "longitude_east": 61.810298919677734,
+      "available_at_origin": {
+        "id": "CRISHORSE01",
+        "title": "LROC NAC CRISHORSE01",
+        "kind": "nac",
+        "posting_m": 3.0,
+        "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CRISHORSE01",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "completion": "2022-03-23"
+      },
+      "loaded_at_origin": [
+        {
+          "title": "LROC NAC CRISHORSE01",
+          "posting_m": 2.999999999999,
+          "centre_weight": 1.0,
+          "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+        }
+      ],
+      "focus_xy_m": [
+        0.0,
+        0.0
+      ],
+      "focus_latitude": 18.562299728393555,
+      "focus_longitude": 61.810298919677734,
+      "loaded_at_focus": [
+        {
+          "title": "LROC NAC CRISHORSE01",
+          "posting_m": 2.999999999999,
+          "centre_weight": 1.0,
+          "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+        }
+      ],
+      "radius_m": 20000.0,
+      "perimeter_grids_m": [
+        59.2253
+      ],
+      "perimeter_samples": 24,
+      "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+    },
+    "vertices": 546261,
+    "triangles": 1092348,
+    "craters": 1158,
+    "artist_micro_craters": 699,
+    "latitude": 18.562299728393555,
+    "longitude_east": 61.810298919677734,
+    "origin_elevation_m": -3649.85832379756,
+    "near_spacing_m": 0.11999999731779099,
+    "outer_radius_m": 20000.0,
+    "seed": 170017,
+    "detail_focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "rocks": 12777,
+    "rock_coverage_k": 0.0011999999731779098,
+    "rock_zones": [
+      {
+        "min_diameter_m": 0.02500000037252903,
+        "max_diameter_m": 0.2,
+        "radius_m": 33.599999999999994,
+        "number_density_per_m2": 0.32937745625155396,
+        "instances": 1182
+      },
+      {
+        "min_diameter_m": 0.2,
+        "max_diameter_m": 1.5,
+        "radius_m": 144.0,
+        "number_density_per_m2": 0.0024161594656603217,
+        "instances": 143
+      },
+      {
+        "min_diameter_m": 0.005,
+        "max_diameter_m": 0.025,
+        "radius_m": 19.200000000000003,
+        "number_density_per_m2": 10.0,
+        "instances": 11452,
+        "basis": "Artist-authored, not a measured site population"
+      }
+    ]
+  },
+  "render_size": [
+    1440,
+    810
+  ],
+  "samples": 64,
+  "scope": "Official Linux bpy 5.2.1; headless CPU Cycles"
+}

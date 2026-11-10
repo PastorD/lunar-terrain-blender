@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "sites": [
+    {
+      "site": "APOLLO17",
+      "triangles": 31308,
+      "dem": {
+        "latitude": 20.190799713134766,
+        "longitude_east": 30.771699905395508,
+        "available_at_origin": {
+          "id": "APOLLO17_2M",
+          "title": "LROC NAC APOLLO17_2M",
+          "kind": "nac",
+          "posting_m": 2.0,
+          "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_APOLLO17_2M",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+          "completion": "2018-11-16",
+          "asset": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG"
+        },
+        "loaded_at_origin": [
+          {
+            "title": "LROC NAC APOLLO17_2M",
+            "posting_m": 2.0000000000006,
+            "centre_weight": 1.0,
+            "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG",
+            "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+          }
+        ],
+        "focus_xy_m": [
+          0.0,
+          0.0
+        ],
+        "focus_latitude": 20.190799713134766,
+        "focus_longitude": 30.771699905395508,
+        "loaded_at_focus": [
+          {
+            "title": "LROC NAC APOLLO17_2M",
+            "posting_m": 2.0000000000006,
+            "centre_weight": 1.0,
+            "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG",
+            "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+          }
+        ],
+        "radius_m": 300.0,
+        "perimeter_grids_m": [
+          2.0000000000006
+        ],
+        "perimeter_samples": 24,
+        "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+      },
+      "passed": true
+    },
+    {
+      "site": "CE6",
+      "triangles": 31308,
+      "dem": {
+        "latitude": -41.63850021362305,
+        "longitude_east": 206.01480102539062,
+        "available_at_origin": {
+          "id": "CHANGE6",
+          "title": "LROC NAC CHANGE6",
+          "kind": "nac",
+          "posting_m": 4.0,
+          "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CHANGE6",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+          "completion": "2025-02-21",
+          "asset": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG"
+        },
+        "loaded_at_origin": [
+          {
+            "title": "LROC NAC CHANGE6",
+            "posting_m": 3.9999999999986002,
+            "centre_weight": 1.0,
+            "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG",
+            "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+          }
+        ],
+        "focus_xy_m": [
+          0.0,
+          0.0
+        ],
+        "focus_latitude": -41.63850021362305,
+        "focus_longitude": 206.01480102539062,
+        "loaded_at_focus": [
+          {
+            "title": "LROC NAC CHANGE6",
+            "posting_m": 3.9999999999986002,
+            "centre_weight": 1.0,
+            "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG",
+            "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+          }
+        ],
+        "radius_m": 300.0,
+        "perimeter_grids_m": [
+          3.9999999999986002
+        ],
+        "perimeter_samples": 24,
+        "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+      },
+      "passed": true
+    },
+    {
+      "site": "SOUTH",
+      "triangles": 31308,
+      "dem": {
+        "latitude": -89.43878936767578,
+        "longitude_east": 222.84498596191406,
+        "available_at_origin": {
+          "id": "ESALL_CR1",
+          "title": "LROC NAC ESALL_CR1",
+          "kind": "nac",
+          "posting_m": 2.0,
+          "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_ESALL_CR1",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+          "completion": "2012-10-04",
+          "asset": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG"
+        },
+        "loaded_at_origin": [
+          {
+            "title": "LROC NAC ESALL_CR1",
+            "posting_m": 2.0,
+            "centre_weight": 1.0,
+            "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG",
+            "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+          }
+        ],
+        "focus_xy_m": [
+          0.0,
+          0.0
+        ],
+        "focus_latitude": -89.4387893676759,
+        "focus_longitude": 222.84498596191406,
+        "loaded_at_focus": [
+          {
+            "title": "LROC NAC ESALL_CR1",
+            "posting_m": 2.0,
+            "centre_weight": 1.0,
+            "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG",
+            "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+          }
+        ],
+        "radius_m": 300.0,
+        "perimeter_grids_m": [
+          2.0,
+          5.0
+        ],
+        "perimeter_samples": 24,
+        "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+      },
+      "passed": true
+    }
+  ],
+  "stale_reports_cleared": true,
+  "user_geometry_retained": true,
+  "scope": "Official Linux bpy 5.2.1, headless CPU; no interactive Blender UI or GPU validation"
+}

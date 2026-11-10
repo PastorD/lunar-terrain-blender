@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "reference": "Independent PROJ via pyproj",
+  "coordinate_checks": [
+    {
+      "south": true,
+      "true_scale_latitude": -69.3,
+      "central_longitude": 32.3,
+      "max_error_m": 1.1999816708318134e-10
+    },
+    {
+      "south": true,
+      "true_scale_latitude": -90,
+      "central_longitude": 0,
+      "max_error_m": 5.820766091346741e-11
+    },
+    {
+      "south": false,
+      "true_scale_latitude": 72.5,
+      "central_longitude": 359,
+      "max_error_m": 9.092327295693865e-10
+    },
+    {
+      "south": false,
+      "true_scale_latitude": 90,
+      "central_longitude": 0,
+      "max_error_m": 5.820766091346741e-11
+    }
+  ],
+  "origin_elevation_m": 532.496696975329,
+  "loaded": [
+    {
+      "title": "LROC NAC VIKRAMSITE1",
+      "posting_m": 2.999999999999,
+      "centre_weight": 1.0,
+      "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/VIKRAMSITE1/NAC_DTM_VIKRAMSITE1_E693S0323.IMG",
+      "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "archive": "lunar_terrain-1.3.2.zip",
+  "bytes": 114793404,
+  "sha256": "4bcd63b3ce7fea3336e43efea1861676e205ec752e2d0718ffba41c2ec83805c",
+  "files": 43,
+  "version": "1.3.2",
+  "official_build_and_validation": true,
+  "zip_integrity": true,
+  "python_syntax_checked": true
+}

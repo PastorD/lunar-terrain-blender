@@ -1,0 +1,48 @@
+{
+  "site": "BlueGhost",
+  "download_bytes": 25398688,
+  "h0_m": -3649.9086058454927,
+  "report": {
+    "latitude": 18.562,
+    "longitude_east": 61.81,
+    "available_at_origin": {
+      "id": "CRISHORSE01",
+      "title": "LROC NAC CRISHORSE01",
+      "kind": "nac",
+      "posting_m": 3.0,
+      "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CRISHORSE01",
+      "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+      "completion": "2022-03-23"
+    },
+    "loaded_at_origin": [
+      {
+        "title": "LROC NAC CRISHORSE01",
+        "posting_m": 2.999999999999,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "focus_latitude": 18.561999999999998,
+    "focus_longitude": 61.809999999999995,
+    "loaded_at_focus": [
+      {
+        "title": "LROC NAC CRISHORSE01",
+        "posting_m": 2.999999999999,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CRISHORSE01/NAC_DTM_CRISHORSE01_E186N0617.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "radius_m": 20000,
+    "perimeter_grids_m": [
+      473.8
+    ],
+    "perimeter_samples": 24,
+    "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+  }
+}

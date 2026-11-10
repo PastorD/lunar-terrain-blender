@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "addon_version": "1.5.0",
+  "wheel_module_alias_bridged": true,
+  "restricted_data_type": "_RestrictData",
+  "restricted_context_type": "_RestrictContext",
+  "restricted_import_register_unregister": true,
+  "disable_reenable": true,
+  "default_busy_false": true,
+  "scene_setting_retained": true,
+  "scope": "Official Linux bpy 5.2.1 with Blender restriction manager applied to the addon bpy module; not a GUI session"
+}

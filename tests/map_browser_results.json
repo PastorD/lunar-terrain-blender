@@ -1,0 +1,11 @@
+{
+  "browser": "152.0.7977.0",
+  "answers": [
+    "2 m finest catalog grid · LROC NAC APOLLO17_2M · 20.19080° N, 30.77170° E",
+    "4 m finest catalog grid · LROC NAC CHANGE6 · -41.63850° N, 206.01480° E",
+    "2 m finest catalog grid · LROC NAC ESALL_CR1 · -89.43879° N, 222.84498° E"
+  ],
+  "errors": [],
+  "mobileOverflow": false,
+  "passed": true
+}

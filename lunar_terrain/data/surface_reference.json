@@ -1,0 +1,47 @@
+{
+  "source": "Zhao et al. (2025), JGR Planets, doi:10.1029/2025JE008960",
+  "dataset": "https://doi.org/10.5281/zenodo.14920942",
+  "license": "CC BY 4.0",
+  "source_shapefile": "CRATER_Map1_completeness.shp",
+  "source_sha256": "94a8ab96b4bc169823ad0e1c2ecafa38996a25ad906ad8cb36eb731d958b494b",
+  "window_map_xy_m": [
+    -210,
+    -475,
+    -170,
+    -435
+  ],
+  "window_area_m2": 1600,
+  "selection": "Polygon vertex-average centres strictly inside the interior rectangle",
+  "complete_catalog_minimum_diameter_m": 0.52,
+  "count": 435,
+  "size_bins_m": [
+    0.52,
+    1,
+    1.5,
+    2,
+    3,
+    5,
+    10,
+    20,
+    100
+  ],
+  "counts_by_bin": [
+    342,
+    55,
+    13,
+    14,
+    7,
+    3,
+    0,
+    1
+  ],
+  "use": "Empirical diameter and valid depth/diameter samples, resampled at authored random positions; not a south-pole field measurement.",
+  "rock_model": {
+    "source_coverage": "Zhao et al. 2025: 0.179%",
+    "k": 0.00179,
+    "law_source": "Yan et al. 2025 Supplementary Material 4, after Li and Wu (2018)",
+    "cumulative_area_equation": "F(>D)=k*exp[-(0.5648+0.01258/k)*D], D in metres, k a fraction",
+    "differential_number_equation": "n(D)=4*k*beta*exp(-beta*D)/(pi*D^2), circular equivalent projected diameter",
+    "limitations": "Illustrative exponential fit; Yan et al. report systematic residuals around 0.15 m. k is an analogue control, not a polar measurement."
+  }
+}

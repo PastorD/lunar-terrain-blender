@@ -1,0 +1,49 @@
+{
+  "site": "ConnectingRidge",
+  "download_bytes": 21695536,
+  "h0_m": 1960.1505480499757,
+  "report": {
+    "latitude": -89.438788,
+    "longitude_east": 222.84498,
+    "available_at_origin": {
+      "id": "ESALL_CR1",
+      "title": "LROC NAC ESALL_CR1",
+      "kind": "nac",
+      "posting_m": 2.0,
+      "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_ESALL_CR1",
+      "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+      "completion": "2012-10-04",
+      "asset": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG"
+    },
+    "loaded_at_origin": [
+      {
+        "title": "LROC NAC ESALL_CR1",
+        "posting_m": 2.0,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "focus_latitude": -89.43878799999982,
+    "focus_longitude": 222.84498,
+    "loaded_at_focus": [
+      {
+        "title": "LROC NAC ESALL_CR1",
+        "posting_m": 2.0,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/ESALL_CR1/NAC_DTM_ESALL_CR1_P895S2222.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "radius_m": 20000,
+    "perimeter_grids_m": [
+      80.0
+    ],
+    "perimeter_samples": 24,
+    "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+  }
+}

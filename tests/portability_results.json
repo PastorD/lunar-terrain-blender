@@ -1,0 +1,50 @@
+[
+  {
+    "scene": "Apollo17_Surface",
+    "blender": "5.2.1 LTS",
+    "saved_blend_version": [
+      5,
+      2,
+      44
+    ],
+    "standalone_render": true,
+    "valid_drivers": 9,
+    "external_dependencies": 0
+  },
+  {
+    "scene": "Apollo17_Outpost",
+    "blender": "5.2.1 LTS",
+    "saved_blend_version": [
+      5,
+      2,
+      44
+    ],
+    "standalone_render": true,
+    "valid_drivers": 9,
+    "external_dependencies": 0
+  },
+  {
+    "scene": "ChangE6_Surface",
+    "blender": "5.2.1 LTS",
+    "saved_blend_version": [
+      5,
+      2,
+      44
+    ],
+    "standalone_render": true,
+    "valid_drivers": 9,
+    "external_dependencies": 0
+  },
+  {
+    "scene": "Rock_Detail",
+    "blender": "5.2.1 LTS",
+    "saved_blend_version": [
+      5,
+      2,
+      44
+    ],
+    "standalone_render": true,
+    "valid_drivers": 9,
+    "external_dependencies": 0
+  }
+]

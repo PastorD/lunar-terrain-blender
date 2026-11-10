@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "check": "Native 64 \u00d7 64 Site01 crop, bitwise equality",
+  "projection": "south_polar"
+}

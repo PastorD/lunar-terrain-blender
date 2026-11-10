@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "preset": "CH3",
+  "coordinates": [
+    -69.37300109863281,
+    32.319000244140625
+  ],
+  "photometry": {
+    "w": 0.42367154359817505,
+    "b": 0.1887212097644806,
+    "c": 0.8623449802398682,
+    "B_CB0": 0.0,
+    "h_CB": 1.0,
+    "B_SH0": 1.5261285305023193,
+    "h_SH": 0.013663477264344692,
+    "theta": 23.656600952148438,
+    "phi": 0.0
+  },
+  "appearance": {
+    "latitude": -69.373,
+    "longitude": 32.319,
+    "exposure": 1.8,
+    "soil_tint": [
+      0.92,
+      0.92,
+      0.92
+    ],
+    "albedo_variation": 0.06,
+    "rock_albedo_ratio": 1.04,
+    "regolith_relief": 2.2
+  },
+  "sun_elevation": 18.0,
+  "sun_azimuth": 355.0,
+  "camera_heading": 90.0,
+  "camera_pitch": -6.0,
+  "camera_lens_mm": 51.0,
+  "camera_height_m": 0.6499999761581421,
+  "mesh_and_camera_preserved_by_appearance": true,
+  "hapke_materials": 2,
+  "generation": {
+    "dem_sources_at_origin": [
+      {
+        "title": "LROC NAC VIKRAMSITE1",
+        "posting_m": 2.999999999999,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/VIKRAMSITE1/NAC_DTM_VIKRAMSITE1_E693S0323.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "warnings": [],
+    "dem_resolution": {
+      "latitude": -69.37300109863281,
+      "longitude_east": 32.319000244140625,
+      "available_at_origin": {
+        "id": "VIKRAMSITE1",
+        "title": "LROC NAC VIKRAMSITE1",
+        "kind": "nac",
+        "posting_m": 3.0,
+        "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_VIKRAMSITE1",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "completion": "2023-09-01"
+      },
+      "loaded_at_origin": [
+        {
+          "title": "LROC NAC VIKRAMSITE1",
+          "posting_m": 2.999999999999,
+          "centre_weight": 1.0,
+          "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/VIKRAMSITE1/NAC_DTM_VIKRAMSITE1_E693S0323.IMG",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+        }
+      ],
+      "focus_xy_m": [
+        0.0,
+        0.0
+      ],
+      "focus_latitude": -69.37300109863281,
+      "focus_longitude": 32.319000244140625,
+      "loaded_at_focus": [
+        {
+          "title": "LROC NAC VIKRAMSITE1",
+          "posting_m": 2.999999999999,
+          "centre_weight": 1.0,
+          "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/VIKRAMSITE1/NAC_DTM_VIKRAMSITE1_E693S0323.IMG",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+        }
+      ],
+      "radius_m": 20000.0,
+      "perimeter_grids_m": [
+        473.8
+      ],
+      "perimeter_samples": 24,
+      "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+    },
+    "vertices": 546261,
+    "triangles": 1092348,
+    "craters": 595,
+    "artist_micro_craters": 808,
+    "latitude": -69.37300109863281,
+    "longitude_east": 32.319000244140625,
+    "origin_elevation_m": 532.4955969316695,
+    "near_spacing_m": 0.11999999731779099,
+    "outer_radius_m": 20000.0,
+    "seed": 170017,
+    "detail_focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "rocks": 14620,
+    "rock_coverage_k": 0.0007000000029802323,
+    "rock_zones": [
+      {
+        "min_diameter_m": 0.02500000037252903,
+        "max_diameter_m": 0.2,
+        "radius_m": 33.599999999999994,
+        "number_density_per_m2": 0.22957600402027795,
+        "instances": 826
+      },
+      {
+        "min_diameter_m": 0.2,
+        "max_diameter_m": 1.5,
+        "radius_m": 144.0,
+        "number_density_per_m2": 0.00037397017884952525,
+        "instances": 25
+      },
+      {
+        "min_diameter_m": 0.005,
+        "max_diameter_m": 0.025,
+        "radius_m": 19.200000000000003,
+        "number_density_per_m2": 12.0,
+        "instances": 13769,
+        "basis": "Artist-authored, not a measured site population"
+      }
+    ]
+  },
+  "render_size": [
+    1024,
+    1024
+  ],
+  "samples": 64,
+  "scope": "Official Linux bpy 5.2.1; headless CPU Cycles"
+}

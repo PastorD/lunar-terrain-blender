@@ -1,0 +1,56 @@
+[
+  {
+    "scene": "Apollo17_Surface",
+    "source_blend_version": [
+      4,
+      5,
+      90
+    ],
+    "blender": "5.2.1 LTS",
+    "prototypes_upgraded": 24,
+    "terrain_placements_camera_sun_photometry_exposure_preserved": true,
+    "idempotent": true,
+    "resolution": [
+      1100,
+      1100
+    ],
+    "cycles_samples": 48,
+    "passed": true
+  },
+  {
+    "scene": "Apollo17_Outpost",
+    "source_blend_version": [
+      4,
+      5,
+      90
+    ],
+    "blender": "5.2.1 LTS",
+    "prototypes_upgraded": 24,
+    "terrain_placements_camera_sun_photometry_exposure_preserved": true,
+    "idempotent": true,
+    "resolution": [
+      1800,
+      1100
+    ],
+    "cycles_samples": 48,
+    "passed": true
+  },
+  {
+    "scene": "ChangE6_Surface",
+    "source_blend_version": [
+      4,
+      5,
+      90
+    ],
+    "blender": "5.2.1 LTS",
+    "prototypes_upgraded": 24,
+    "terrain_placements_camera_sun_photometry_exposure_preserved": true,
+    "idempotent": true,
+    "resolution": [
+      1280,
+      960
+    ],
+    "cycles_samples": 48,
+    "passed": true
+  }
+]

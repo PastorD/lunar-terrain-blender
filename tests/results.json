@@ -1,0 +1,71 @@
+{
+  "blender": "5.2.1 LTS",
+  "checks": [
+    {
+      "name": "register / unregister / register",
+      "passed": true
+    },
+    {
+      "name": "DEM origin and units",
+      "passed": true,
+      "latitude": 20.1908,
+      "elevation_m": -2627.501202649482
+    },
+    {
+      "name": "DEM origin and units",
+      "passed": true,
+      "latitude": -89.438788,
+      "elevation_m": 1959.162880285173
+    },
+    {
+      "name": "exact pole continuity",
+      "passed": true,
+      "latitude": -90,
+      "range_m": 0.34820025716908276
+    },
+    {
+      "name": "exact pole continuity",
+      "passed": true,
+      "latitude": 90,
+      "range_m": 4.048924893140793e-07
+    },
+    {
+      "name": "longitude wrapping",
+      "passed": true
+    },
+    {
+      "name": "range-ignored download refuses full body",
+      "passed": true
+    },
+    {
+      "name": "continuous mesh; only outer boundary; consistent winding",
+      "passed": true,
+      "vertices": 29817,
+      "triangles": 59512,
+      "boundary_edges": 120
+    },
+    {
+      "name": "cancelled staging retains completed scene",
+      "passed": true
+    },
+    {
+      "name": "late build failure removes staged data and retains completed scene",
+      "passed": true
+    },
+    {
+      "name": "camera focus, zero populations and user object preservation",
+      "passed": true
+    },
+    {
+      "name": "visible solar disc follows Sun and black sky elsewhere",
+      "passed": true,
+      "effective_diameter_pixels": 6.573474503597742,
+      "peak_linear": 1000.0
+    },
+    {
+      "name": "clear restores original camera/world and retains user objects",
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

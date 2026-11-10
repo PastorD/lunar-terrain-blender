@@ -1,0 +1,57 @@
+{
+  "blender": "5.2.1 LTS",
+  "python": "3.13.15",
+  "numpy": "2.5.3",
+  "archive": "lunar_terrain-1.3.2.zip",
+  "archive_sha256": "4bcd63b3ce7fea3336e43efea1861676e205ec752e2d0718ffba41c2ec83805c",
+  "addon_version": "1.3.2",
+  "minimum_blender": "5.2.0",
+  "installed_via": "bpy.ops.extensions.package_install_files",
+  "extension_namespace": "bl_ext.repository.lunar_terrain",
+  "panel_registered": true,
+  "extension_cache": true,
+  "disable_reenable": true,
+  "sites": [
+    {
+      "site": "APOLLO17",
+      "triangles": 10408,
+      "origin_elevation_m": -2626.999418340711,
+      "outpost": true,
+      "native_grid_m": 2.0,
+      "finite_40km_transect": true,
+      "passed": true
+    },
+    {
+      "site": "SOUTH",
+      "triangles": 10408,
+      "origin_elevation_m": 1960.153551787662,
+      "outpost": false,
+      "native_grid_m": 2.0,
+      "finite_40km_transect": true,
+      "passed": true
+    },
+    {
+      "site": "CE6",
+      "triangles": 10408,
+      "origin_elevation_m": -5252.721609543965,
+      "outpost": false,
+      "native_grid_m": 4.0,
+      "finite_40km_transect": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "restricted_registration_calls": 51,
+  "restricted_data_type": "_RestrictData",
+  "restricted_context_type": "_RestrictContext",
+  "wheel_module_alias_bridged": true,
+  "online_access": false,
+  "upgrade": {
+    "from_version": "1.3.1",
+    "from_sha256": "c990a91210cc6b206fd47c69d32600e8e6ae09ed2756519e90763a3604189d53",
+    "settings_retained": true,
+    "cache_retained": true,
+    "idle": true
+  },
+  "scope": "Linux, official bpy module, headless CPU; no interactive UI or GPU validation"
+}

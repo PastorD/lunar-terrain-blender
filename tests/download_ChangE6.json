@@ -1,0 +1,50 @@
+{
+  "site": "ChangE6",
+  "download_bytes": 19567636,
+  "h0_m": -5252.720242113044,
+  "report": {
+    "latitude": -41.6385,
+    "longitude_east": 206.0148,
+    "available_at_origin": {
+      "id": "CHANGE6",
+      "title": "LROC NAC CHANGE6",
+      "kind": "nac",
+      "posting_m": 4.0,
+      "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_CHANGE6",
+      "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+      "completion": "2025-02-21",
+      "asset": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG"
+    },
+    "loaded_at_origin": [
+      {
+        "title": "LROC NAC CHANGE6",
+        "posting_m": 3.9999999999986002,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "focus_latitude": -41.63850000000001,
+    "focus_longitude": 206.01479999999998,
+    "loaded_at_focus": [
+      {
+        "title": "LROC NAC CHANGE6",
+        "posting_m": 3.9999999999986002,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/CHANGE6/NAC_DTM_CHANGE6_E421S2060.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "radius_m": 20000,
+    "perimeter_grids_m": [
+      473.8,
+      1895.21
+    ],
+    "perimeter_samples": 24,
+    "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+  }
+}

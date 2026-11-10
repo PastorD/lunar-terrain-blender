@@ -1,0 +1,129 @@
+{
+  "blender": "5.2.1 LTS",
+  "passed": true,
+  "prototypes": [
+    {
+      "index": 0,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 1,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 2,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 3,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 4,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 5,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 6,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 7,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 8,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 9,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 10,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 11,
+      "vertices": 2562,
+      "triangles": 5120
+    },
+    {
+      "index": 12,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 13,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 14,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 15,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 16,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 17,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 18,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 19,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 20,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 21,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 22,
+      "vertices": 42,
+      "triangles": 80
+    },
+    {
+      "index": 23,
+      "vertices": 42,
+      "triangles": 80
+    }
+  ],
+  "projected_area_normalized": true,
+  "finite_vertices": true,
+  "valid_meshes": true
+}

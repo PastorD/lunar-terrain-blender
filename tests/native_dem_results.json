@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "sites": [
+    {
+      "site": "APOLLO17_2M",
+      "grid_m": 2,
+      "exact_samples": 64,
+      "pixel_centre_error_m": 0.0
+    },
+    {
+      "site": "CHANGE6",
+      "grid_m": 4,
+      "exact_samples": 64,
+      "pixel_centre_error_m": 0.0
+    },
+    {
+      "site": "ESALL_CR1",
+      "grid_m": 2,
+      "exact_samples": 64,
+      "pixel_centre_error_m": 0.0
+    }
+  ],
+  "bigtiff_predictor3_gdal_exact": true,
+  "affine_seam_error_m": 3.4659962466321304e-05,
+  "nodata_fallback": true,
+  "range_refusal": true,
+  "budget_enforced": true,
+  "pole_longitude_checks": true,
+  "jaxa_grid_m": 7.4031617246699,
+  "jaxa_bytes": 33554432,
+  "jaxa_origin_elevation_m": -2632.9999999999995
+}

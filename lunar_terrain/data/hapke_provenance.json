@@ -1,0 +1,56 @@
+{
+  "product": "WAC_HAPKEPARAMMAP_566NM",
+  "version": "v1.1",
+  "source": "https://data.lroc.im-ldi.com/lroc/view_rdr/WAC_HAPKEPARAMMAP",
+  "paper": "https://doi.org/10.1002/2013JE004580",
+  "sha256_img": "2868152f9c63b6887f68fa05bf671f425c335fe440988ebbc1bf7ed76ec71831",
+  "bands": [
+    "w",
+    "b",
+    "c",
+    "B_CB0",
+    "h_CB",
+    "B_SH0",
+    "h_SH",
+    "theta",
+    "phi"
+  ],
+  "shape": [
+    9,
+    140,
+    360
+  ],
+  "centers": "69.5N to 69.5S, 0.5E to 359.5E, 1-degree cells",
+  "variant": "K=1, phi=0, CBOE=0; c in [-1,1], positive backward; logarithmic H; product roughness 23.6566 degrees",
+  "limits": "Regional 566 nm priors; processed reference images do not establish unique site Hapke values, Sun/camera angles or spectral response. Tints/exposure are artistic.",
+  "APOLLO": {
+    "row": 49,
+    "column": 30,
+    "values": {
+      "w": 0.19069647789001465,
+      "b": 0.26402950286865234,
+      "c": 0.07014839351177216,
+      "B_CB0": 0.0,
+      "h_CB": 1.0,
+      "B_SH0": 2.1867916584014893,
+      "h_SH": 0.07088305801153183,
+      "theta": 23.656600952148438,
+      "phi": 0.0
+    }
+  },
+  "CHANGE": {
+    "row": 111,
+    "column": 206,
+    "values": {
+      "w": 0.21589788794517517,
+      "b": 0.2657693028450012,
+      "c": 0.05458565056324005,
+      "B_CB0": 0.0,
+      "h_CB": 1.0,
+      "B_SH0": 2.115570306777954,
+      "h_SH": 0.04320761561393738,
+      "theta": 23.656600952148438,
+      "phi": 0.0
+    }
+  }
+}

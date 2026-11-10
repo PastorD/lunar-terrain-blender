@@ -1,0 +1,95 @@
+{
+  "blender": "5.2.1 LTS",
+  "version": "1.2.0",
+  "numeric": {
+    "cases": 180,
+    "reciprocity_error": 4.749069235816023e-16,
+    "zero_roughness_closed_form_error": 5.986643260264197e-16,
+    "finite_nonnegative": true,
+    "unlit_zero": true,
+    "optional_CBOE_zero_phase_limit": true
+  },
+  "render_angles": [
+    {
+      "incidence": 0,
+      "emergence": 0,
+      "relative_azimuth": 0,
+      "phase": 0.0,
+      "rendered": 0.0364522859454155,
+      "expected": 0.036452282316261526,
+      "relative_error": 9.955903279005384e-08
+    },
+    {
+      "incidence": 0,
+      "emergence": 60,
+      "relative_azimuth": 90,
+      "phase": 59.99999999999999,
+      "rendered": 0.01232884731143713,
+      "expected": 0.012328844887277018,
+      "relative_error": 1.9662507999687448e-07
+    },
+    {
+      "incidence": 30,
+      "emergence": 60,
+      "relative_azimuth": 45,
+      "phase": 42.336779535532315,
+      "rendered": 0.014783679507672787,
+      "expected": 0.014783677667305263,
+      "relative_error": 1.2448644814385119e-07
+    },
+    {
+      "incidence": 60,
+      "emergence": 30,
+      "relative_azimuth": 45,
+      "phase": 42.336779535532315,
+      "rendered": 0.008535361848771572,
+      "expected": 0.008535360280831353,
+      "relative_error": 1.8369935972759277e-07
+    },
+    {
+      "incidence": 72,
+      "emergence": 80,
+      "relative_azimuth": 0,
+      "phase": 8.000000000000027,
+      "rendered": 0.026514025405049324,
+      "expected": 0.026513987621283014,
+      "relative_error": 1.425050311172754e-06
+    },
+    {
+      "incidence": 80,
+      "emergence": 72,
+      "relative_azimuth": 0,
+      "phase": 8.000000000000027,
+      "rendered": 0.014899206347763538,
+      "expected": 0.014899198804363906,
+      "relative_error": 5.062956559891114e-07
+    },
+    {
+      "incidence": 88,
+      "emergence": 60,
+      "relative_azimuth": 135,
+      "phase": 126.480534082742,
+      "rendered": 0.0003764379071071744,
+      "expected": 0.00037643803126380046,
+      "relative_error": 3.298195605901907e-07
+    },
+    {
+      "incidence": 60,
+      "emergence": 80,
+      "relative_azimuth": 180,
+      "phase": 140.0,
+      "rendered": 0.004960331134498119,
+      "expected": 0.004960333662942939,
+      "relative_error": 5.097328106624328e-07
+    }
+  ],
+  "max_radiance_relative_error": 1.425050311172754e-06,
+  "controls": {
+    "preserves_geometry_camera_manual_sun_rotation_energy": true,
+    "atlas_lookup": true,
+    "polar_missing_coverage_retained": true,
+    "location_lookup_preserves_exposure": true
+  },
+  "passed": true,
+  "limits": "Implementation tests, not laboratory validation of the regional parameters or calibrated inversion of reference photographs."
+}

@@ -1,0 +1,49 @@
+{
+  "site": "Apollo17",
+  "download_bytes": 109229476,
+  "h0_m": -2626.999268711805,
+  "report": {
+    "latitude": 20.1908,
+    "longitude_east": 30.7717,
+    "available_at_origin": {
+      "id": "APOLLO17_2M",
+      "title": "LROC NAC APOLLO17_2M",
+      "kind": "nac",
+      "posting_m": 2.0,
+      "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_APOLLO17_2M",
+      "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+      "completion": "2018-11-16",
+      "asset": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG"
+    },
+    "loaded_at_origin": [
+      {
+        "title": "LROC NAC APOLLO17_2M",
+        "posting_m": 2.0000000000006,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "focus_latitude": 20.1908,
+    "focus_longitude": 30.7717,
+    "loaded_at_focus": [
+      {
+        "title": "LROC NAC APOLLO17_2M",
+        "posting_m": 2.0000000000006,
+        "centre_weight": 1.0,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/APOLLO17_2M/NAC_DTM_APOLLO17_2M_E201N0307.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "radius_m": 20000,
+    "perimeter_grids_m": [
+      59.2253
+    ],
+    "perimeter_samples": 24,
+    "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+  }
+}

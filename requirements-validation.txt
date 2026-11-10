@@ -1,0 +1,5 @@
+# Optional headless validation environment. Normal extension use needs no pip.
+# Use Python 3.13 on a platform supported by the Blender Foundation bpy wheel.
+bpy==5.2.1
+numpy==2.5.3
+pillow==12.3.0
