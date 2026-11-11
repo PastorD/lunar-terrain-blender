@@ -1,0 +1,3 @@
+# Install under Python 3.13, separately from the Gazebo conda environment.
+bpy==5.2.1
+numpy>=2,<3

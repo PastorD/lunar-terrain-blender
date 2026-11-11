@@ -1,0 +1,10 @@
+name: lunar-gazebo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - gz-sim8=8.10.0
+  - gz-launch7
+  - pillow
+  - numpy
+  - pkg-config

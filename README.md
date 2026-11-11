@@ -24,6 +24,14 @@ Download one `.blend`, open it in Blender and press **F12**. Materials, geometry
 
 Apollo and Chang'e example geometry preserves the earlier 1.2 appearance studies. Rebuild those examples with the 1.5 extension to use its newer native DEM selection. Blue Ghost and Chandrayaan-3 scenes already contain their native local crops.
 
+## Use the examples in Gazebo
+
+All seven examples also have a Gazebo Harmonic export: Apollo 17 surface and outpost, Chang'e-6, Blue Ghost, Chandrayaan-3, the rock close-up and the opposition diagnostic. Each package contains a local SDF world, textured visual meshes, separate collisions, lunar gravity and a launcher.
+
+[Gazebo downloads](https://github.com/PastorD/lunar-terrain-blender/releases/tag/gazebo-v1.0.0) · [Gazebo guide and limitations](gazebo/README.md) · [Build/test status](https://github.com/PastorD/lunar-terrain-blender/actions/workflows/gazebo-examples.yml)
+
+Gazebo uses **PBR approximations**, so the Blender Hapke opposition effect does not transfer. The diagnostic export has identical PBR panels; use the original `.blend` to inspect the Hapke response. Outpost hardware is static geometry. The build workflow tests each export before publishing it.
+
 ## Install the generator
 
 1. Download **[lunar_terrain-1.5.0.zip](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/lunar_terrain-1.5.0.zip)**. Keep it zipped. GitHub's automatically generated **Source code** archive is not the installable extension.

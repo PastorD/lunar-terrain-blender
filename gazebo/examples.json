@@ -1,0 +1,76 @@
+{
+  "source_release": "v1.5.0",
+  "gazebo_release": "gazebo-v1.0.0",
+  "examples": [
+    {
+      "id": "apollo17_outpost",
+      "title": "Apollo 17 concept outpost",
+      "blend": "Apollo17_Outpost.blend",
+      "sha256": "caa0525c69116f7a4a3fc98ba01c74f40c234ab74cfb3a4b94058dcf1dcfdae3",
+      "bytes": 62004550,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Outpost.blend",
+      "archive": "Apollo17_Outpost_Gazebo.zip",
+      "model": "apollo17_outpost_terrain"
+    },
+    {
+      "id": "apollo17",
+      "title": "Apollo 17 surface",
+      "blend": "Apollo17_Surface.blend",
+      "sha256": "783d685ee45cf1dfe3a2f3a15d1af142b02b8929287bbaf62b49a2a8f87f918e",
+      "bytes": 59418194,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Surface.blend",
+      "archive": "Apollo17_Surface_Gazebo.zip",
+      "model": "apollo17_terrain"
+    },
+    {
+      "id": "blue_ghost",
+      "title": "Blue Ghost surface",
+      "blend": "BlueGhost_Surface.blend",
+      "sha256": "af7de0b7d750aaa174e8c5ff19458bdb2e75689d69339a7ed92fe316d7415628",
+      "bytes": 27084123,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/BlueGhost_Surface.blend",
+      "archive": "BlueGhost_Surface_Gazebo.zip",
+      "model": "blue_ghost_terrain"
+    },
+    {
+      "id": "chandrayaan3",
+      "title": "Chandrayaan-3 surface",
+      "blend": "Chandrayaan3_Surface.blend",
+      "sha256": "f58718b91fc533083fe7310e0d5d3d9bc5d0cc31553ecf002ca9594bf6785548",
+      "bytes": 27101822,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Chandrayaan3_Surface.blend",
+      "archive": "Chandrayaan3_Surface_Gazebo.zip",
+      "model": "chandrayaan3_terrain"
+    },
+    {
+      "id": "change6",
+      "title": "Chang\u2019e-6 surface",
+      "blend": "ChangE6_Surface.blend",
+      "sha256": "597f5cfe27efe44a05f124e8fdb58d8dc72d9920f9b67840b30c6d89a62501f1",
+      "bytes": 59210683,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/ChangE6_Surface.blend",
+      "archive": "ChangE6_Surface_Gazebo.zip",
+      "model": "change6_terrain"
+    },
+    {
+      "id": "opposition_check",
+      "title": "Hapke opposition diagnostic (PBR limitation demo)",
+      "blend": "Hapke_Opposition_Check.blend",
+      "sha256": "dfb0d2f2020a7686773b6d00c6ee963a389d8deb95f05a89b2cda7ac34a424b6",
+      "bytes": 130310,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Hapke_Opposition_Check.blend",
+      "archive": "Hapke_Opposition_Check_Gazebo.zip",
+      "model": "opposition_check_terrain"
+    },
+    {
+      "id": "rock_detail",
+      "title": "Rock detail",
+      "blend": "Rock_Detail.blend",
+      "sha256": "fd99e651d5d5c396d4807008c77517902ec76895b7785c3d47796bdfcf2f603e",
+      "bytes": 4370378,
+      "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Rock_Detail.blend",
+      "archive": "Rock_Detail_Gazebo.zip",
+      "model": "rock_detail_terrain"
+    }
+  ]
+}

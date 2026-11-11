@@ -1,0 +1,104 @@
+name: Build and test all Gazebo examples
+on:
+  push:
+    branches: [main]
+    paths: ['gazebo/**', '.github/workflows/gazebo-examples.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gazebo-examples-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        example: [apollo17, apollo17_outpost, change6, blue_ghost, chandrayaan3, rock_detail, opposition_check]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.13'
+      - name: Install Blender exporter
+        run: |
+          python -m venv "$RUNNER_TEMP/blender"
+          "$RUNNER_TEMP/blender/bin/python" -m pip install -r gazebo/requirements-blender.txt
+      - name: Export saved Blender example
+        env:
+          LUNAR_EXAMPLE: ${{ matrix.example }}
+        run: |
+          python gazebo/build_examples.py build --example "$LUNAR_EXAMPLE" --bpy-python "$RUNNER_TEMP/blender/bin/python"
+      - name: Install Mesa software rendering
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libegl1 libgl1-mesa-dri libglu1-mesa
+      - uses: mamba-org/setup-micromamba@add3a49764cedee8ee24e82dfde87f5bc2914462 # v2
+        with:
+          environment-file: gazebo/environment.yml
+          cache-environment: false
+          init-shell: none
+      - name: Test Ogre2 rendering and DART collisions
+        shell: micromamba-shell {0}
+        env:
+          LUNAR_EXAMPLE: ${{ matrix.example }}
+          LIBGL_ALWAYS_SOFTWARE: '1'
+        run: |
+          set -euo pipefail
+          export LD_LIBRARY_PATH="$CONDA_PREFIX/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          bash gazebo/tests/run_offline_tests.sh "build/gazebo/$LUNAR_EXAMPLE"
+      - name: Test full Gazebo server and camera
+        shell: micromamba-shell {0}
+        env:
+          LUNAR_EXAMPLE: ${{ matrix.example }}
+          LIBGL_ALWAYS_SOFTWARE: '1'
+        run: |
+          set -euo pipefail
+          export LD_LIBRARY_PATH="$CONDA_PREFIX/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          bash gazebo/test_server.sh "build/gazebo/$LUNAR_EXAMPLE"
+      - name: Package verified world
+        env:
+          LUNAR_EXAMPLE: ${{ matrix.example }}
+        run: python gazebo/build_examples.py package --example "$LUNAR_EXAMPLE"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: gazebo-${{ matrix.example }}
+          path: dist/gazebo/*
+          compression-level: 0
+          retention-days: 7
+          if-no-files-found: error
+      - name: Retain diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: failed-${{ matrix.example }}
+          path: |
+            build/gazebo/${{ matrix.example }}/test_output/*.log
+            build/gazebo/${{ matrix.example }}/test_output/*.csv
+            build/gazebo/${{ matrix.example }}/test_output/*.png
+            build/gazebo/${{ matrix.example }}/export_manifest.json
+          retention-days: 7
+  release:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          pattern: gazebo-*
+          path: dist/gazebo
+          merge-multiple: true
+      - name: Assemble checksums and exporter source
+        run: |
+          python gazebo/scripts/release_assets.py dist/gazebo
+      - name: Publish Gazebo examples
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create gazebo-v1.0.0 dist/gazebo/* \
+            --title 'Gazebo examples 1.0 — all seven scenes' \
+            --notes-file gazebo/RELEASE_NOTES.md --target "$GITHUB_SHA" --latest=false

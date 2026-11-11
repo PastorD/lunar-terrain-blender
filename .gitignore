@@ -11,3 +11,6 @@ dist/
 /lunar_terrain/data/Lunar_DEM_Map.html
 /lunar_terrain/data/Lunar_DEM_Map.png
 /examples/renders/
+
+/build/
+/gazebo/test_output/
