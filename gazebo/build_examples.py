@@ -36,7 +36,7 @@ def build(entry,args):
     subprocess.run([sys.executable,str(ROOT/'scripts/make_worlds.py'),str(package)],check=True)
     for name in ['run.sh','test_server.sh']:
         shutil.copy2(ROOT/name,package/name);(package/name).chmod(0o755)
-    for name in ['run_offline_tests.sh','render_export.cc','physics_export.cc','resolve_world.py']:
+    for name in ['run_offline_tests.sh','render_export.cc','physics_export.cc','resolve_world.py','camera_subscriber.cc','server_smoke.py']:
         shutil.copy2(ROOT/'tests'/name,package/'tests'/name)
     (package/'tests/run_offline_tests.sh').chmod(0o755)
     shutil.copy2(ROOT.parent/'LICENSE',package/'LICENSE')

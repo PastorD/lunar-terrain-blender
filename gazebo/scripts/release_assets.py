@@ -11,9 +11,9 @@ for e in catalog['examples']:
 with zipfile.ZipFile(dist/'Lunar_Terrain_Gazebo_Exporter.zip','w',zipfile.ZIP_DEFLATED) as bundle:
     for path in sorted(root.rglob('*')):
         if not path.is_file() or '__pycache__' in path.parts or 'test_output' in path.parts:continue
-        bundle.write(path,Path('Lunar_Terrain_Gazebo')/path.relative_to(root))
-    bundle.write(root.parent/'LICENSE','LICENSE')
-    bundle.write(root.parent/'lunar_terrain/data/PROVENANCE.md','lunar_terrain/data/PROVENANCE.md')
+        bundle.write(path,Path('lunar-terrain-gazebo/gazebo')/path.relative_to(root))
+    bundle.write(root.parent/'LICENSE','lunar-terrain-gazebo/LICENSE')
+    bundle.write(root.parent/'lunar_terrain/data/PROVENANCE.md','lunar-terrain-gazebo/lunar_terrain/data/PROVENANCE.md')
 lines=[]
 for path in sorted(dist.iterdir()):
     if not path.is_file() or path.name=='SHA256SUMS':continue
