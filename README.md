@@ -14,6 +14,7 @@ Download one `.blend`, open it in Blender and press **F12**. Materials, geometry
 
 | Example | Download | What it contains |
 | --- | --- | --- |
+| NASA Moon Base / Connecting Ridge | [NASA_MoonBase_Connecting_Ridge.blend](https://github.com/PastorD/lunar-terrain-blender/releases/download/moonbase-v1.0.0/NASA_MoonBase_Connecting_Ridge.blend) | Blue Moon Mark 1 target-region study; native 2 m DEM, 40 km terrain, surface and overview cameras; [site status and provenance](NASA_MOONBASE.md) |
 | Chandrayaan-3 / Shiv Shakti | [Chandrayaan3_Surface.blend](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Chandrayaan3_Surface.blend) | Neutral Pragyan NavCam-inspired ground, native 3 m local DEM; no Vikram model |
 | Blue Ghost / Mare Crisium | [BlueGhost_Surface.blend](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/BlueGhost_Surface.blend) | Cool low-Sun surface study, native 3 m local DEM |
 | Apollo 17 surface | [Apollo17_Surface.blend](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Surface.blend) | Bright gray soil and a Taurus–Littrow landscape |
@@ -26,7 +27,7 @@ Apollo and Chang'e example geometry preserves the earlier 1.2 appearance studies
 
 ## Use the examples in Gazebo
 
-All seven examples also have a Gazebo Harmonic export: Apollo 17 surface and outpost, Chang'e-6, Blue Ghost, Chandrayaan-3, the rock close-up and the opposition diagnostic. Each package contains a local SDF world, textured visual meshes, separate collisions, lunar gravity and a launcher.
+The seven original examples have Gazebo Harmonic exports: Apollo 17 surface and outpost, Chang'e-6, Blue Ghost, Chandrayaan-3, the rock close-up and the opposition diagnostic. The new [Moon Base / Connecting Ridge example](https://github.com/PastorD/lunar-terrain-blender/releases/tag/moonbase-v1.0.0) adds an eighth world. Each package contains a local SDF world, textured visual meshes, separate collisions, lunar gravity and a launcher.
 
 [Gazebo downloads](https://github.com/PastorD/lunar-terrain-blender/releases/tag/gazebo-v1.0.0) · [Gazebo guide and limitations](gazebo/README.md) · [Build/test status](https://github.com/PastorD/lunar-terrain-blender/actions/workflows/gazebo-examples.yml)
 
@@ -63,6 +64,10 @@ Other coordinates use the supported DEM catalogue, downloads and offline fallbac
 ![Chang'e-6 surface study](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/ChangE6_Surface.png)
 
 These images are renders of the downloadable scenes, not mission photographs.
+
+The [NASA Moon Base regional study](NASA_MOONBASE.md) uses the documented R01
+Connecting Ridge reference point within the Blue Moon Mark 1 target region.
+It is not a confirmed touchdown location or finalized permanent base site.
 
 ## Physical scope
 
