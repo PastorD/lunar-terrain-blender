@@ -4,7 +4,7 @@ Generate lunar landscapes from real elevation data, with continuous levels of de
 
 **Blender 5.2+ · Version 1.5.0 · Tested with Linux bpy 5.2.1 LTS**
 
-[Download the extension](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/lunar_terrain-1.5.0.zip) · [All example scenes](https://github.com/PastorD/lunar-terrain-blender/releases/tag/v1.5.0) · [User guide](USER_GUIDE.md) · [Report an issue](https://github.com/PastorD/lunar-terrain-blender/issues)
+[Download the extension](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/lunar_terrain-1.5.0.zip) · [All example scenes](#start-with-a-scene) · [User guide](USER_GUIDE.md) · [Report an issue](https://github.com/PastorD/lunar-terrain-blender/issues)
 
 ![Chandrayaan-3 terrain rendered in Cycles](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Chandrayaan3_Surface.png)
 
@@ -68,6 +68,15 @@ These images are renders of the downloadable scenes, not mission photographs.
 The [NASA Moon Base regional study](NASA_MOONBASE.md) uses the documented R01
 Connecting Ridge reference point within the Blue Moon Mark 1 target region.
 It is not a confirmed touchdown location or finalized permanent base site.
+
+| Connecting Ridge surface | Regional overview |
+| --- | --- |
+| ![Connecting Ridge surface rendered in Cycles](https://github.com/PastorD/lunar-terrain-blender/releases/download/moonbase-v1.0.0/NASA_MoonBase_Connecting_Ridge.png) | ![Connecting Ridge regional overview rendered in Cycles](https://github.com/PastorD/lunar-terrain-blender/releases/download/moonbase-v1.0.0/NASA_MoonBase_Connecting_Ridge_Overview.png) |
+
+The [Moon Base validation run](https://github.com/PastorD/lunar-terrain-blender/actions/runs/42975437631)
+passed Blender 5.2.1 CPU rendering, Ogre2 rendering, DART collisions/lunar gravity,
+and full Gazebo server camera output. Download its Blender and Gazebo validation
+JSON files with the [release assets](https://github.com/PastorD/lunar-terrain-blender/releases/tag/moonbase-v1.0.0).
 
 ## Physical scope
 
