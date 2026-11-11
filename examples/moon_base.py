@@ -60,7 +60,11 @@ def run():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--draft', action='store_true')
     parser.add_argument('--reuse', action='store_true')
-    argv = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else sys.argv[1:]
+    # Blender's own -b/--python flags are not arguments to this example.
+    if '--' in sys.argv:
+        argv = sys.argv[sys.argv.index('--') + 1:]
+    else:
+        argv = [] if bpy.app.binary_path else sys.argv[1:]
     args = parser.parse_args(argv)
     addon.register()
     blend = ROOT / 'examples' / (NAME + '.blend')
