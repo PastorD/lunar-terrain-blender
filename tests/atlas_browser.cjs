@@ -26,6 +26,9 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'build/atlas'),local=
  await page.waitForFunction(()=>['photo','render'].every(id=>document.getElementById(id).complete));await page.screenshot({path:path.join(out,'Atlas_Global.png'),fullPage:true});
  await page.setViewportSize({width:390,height:844});await page.locator('#site-list button[data-site="chandrayaan3"]').click();
  await page.waitForFunction(()=>['photo','render'].every(id=>document.getElementById(id).complete));assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(out,'Atlas_Mobile.png'),fullPage:true});
+ await page.locator('#extras').scrollIntoViewIfNeeded();
+ await page.waitForFunction(()=>[...document.querySelectorAll('#extras img')].every(i=>i.complete));
+ assert.ok(await page.evaluate(()=>[...document.querySelectorAll('#extras img')].every(i=>i.naturalWidth>100)),'All additional-scene previews must load');
  assert.deepEqual(errors,[]);await page.reload({waitUntil:'domcontentloaded'});assert.equal(await page.evaluate(()=>lunarAtlas.selected),'chandrayaan3');
  const result={passed:true,browser:await browser.version(),checked:new Date().toISOString(),local_preview_routes:local,locations:rows,projection_checks:projections,keyboard_map_selection:true,mobile_no_overflow:true,hash_reload:true};
  fs.writeFileSync(path.join(out,'Atlas_Browser_validation.json'),JSON.stringify(result,null,2)+'\n');console.log('ATLAS BROWSER PASS',rows.length,'photo/render pairs, maps, keyboard, JSON downloads, mobile');await browser.close();

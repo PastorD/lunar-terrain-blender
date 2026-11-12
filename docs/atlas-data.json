@@ -23,7 +23,7 @@
       "photoCaption": "AS17-147-22527: lunar module and rover on the Apollo 17 surface.",
       "credit": "NASA / Apollo 17",
       "photoSource": "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?frame=22527&mission=AS17&roll=147",
-      "render": "v1.5.0/Apollo17_Surface.png",
+      "render": "v1.6.0/Apollo17_Surface.png",
       "blend": "v1.5.0/Apollo17_Surface.blend",
       "sources": [
         {
@@ -47,17 +47,21 @@
       "dem": "4 m LROC NAC in the current preset",
       "context": "473.8 m / 1,895 m LOLA fallback",
       "renderNote": "The saved example preserves earlier geometry. Rebuild for the native 4 m crop. The panorama and render do not share a camera pose.",
-      "photo": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10546977/part/10547027.png",
+      "photo": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/06/chang_e-6_landing_site_on_the_far_side_of_the_moon/26133503-1-eng-GB/277126/image-thumb__277126__fit_large/Chang_e-6_landing_site_on_the_far_side_of_the_Moon.fff4c010.webp",
       "photoType": "Surface panorama",
-      "photoCaption": "Stitched panorama from the Chang’e-6 lander, released 4 June 2024.",
-      "credit": "CNSA / handout via Xinhua",
-      "photoSource": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10546977/content.html",
+      "photoCaption": "Chang’e-6 lander panoramic-camera view, published by ESA on 5 June 2024.",
+      "credit": "CNSA / CLEP, via ESA",
+      "photoSource": "https://www.esa.int/media/chang-e-6-landing-site-on-the-far-side-of-the-moon",
       "render": "v1.5.0/ChangE6_Surface.png",
       "blend": "v1.5.0/ChangE6_Surface.blend",
       "sources": [
         {
           "title": "LROC: First look at Chang’e-6",
           "url": "https://lroc.im-ldi.com/images/1374"
+        },
+        {
+          "title": "CNSA original image release",
+          "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c10546977/content.html"
         }
       ],
       "gazebo": "gazebo-v1.0.0/ChangE6_Surface_Gazebo.zip"

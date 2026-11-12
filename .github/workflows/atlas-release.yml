@@ -2,7 +2,7 @@ name: Build and publish Lunar Atlas 1.6
 on:
   push:
     branches: [main]
-    paths: ['lunar_terrain/sites.py', 'lunar_terrain/dem.py', 'docs/atlas-*', 'tools/*atlas*', 'tools/prepare_polar_data.py', 'examples/polar_sites.py', '.github/workflows/atlas-release.yml']
+    paths: ['lunar_terrain/sites.py', 'lunar_terrain/dem.py', 'docs/atlas-*', 'tools/*atlas*', 'tools/prepare_polar_data.py', 'examples/polar_sites.py', 'examples/render_atlas_previews.py', 'tests/atlas_browser.cjs', '.github/workflows/atlas-release.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,13 +24,47 @@ jobs:
           "$RUNNER_TEMP/blender/bin/python" -m pip install -r gazebo/requirements-blender.txt 'Pillow>=11,<13'
       - name: Restore pinned base data
         run: python tools/fetch_release_data.py
-      - name: Prepare native polar DEMs and build atlas
+      - name: Restore computed terrain and preview cache
+        id: terrain-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            lunar_terrain/data/*.npz
+            examples/*Mouton.blend
+            examples/Nobile_Rim_2.blend
+            examples/Malapert_Massif.blend
+            examples/renders/
+            build/polar_sources/validation.json
+            build/polar_examples/
+            build/atlas/Legacy_Previews_validation.json
+          key: atlas-build-${{ hashFiles('lunar_terrain/**/*.py', 'lunar_terrain/blender_manifest.toml', 'examples/polar_sites.py', 'examples/render_atlas_previews.py', 'tools/prepare_polar_data.py', 'release-manifest.json', 'gazebo/examples.json', 'gazebo/requirements-blender.txt') }}
+      - name: Prepare native polar DEMs
+        if: steps.terrain-cache.outputs.cache-hit != 'true'
+        run: '"$RUNNER_TEMP/blender/bin/python" tools/prepare_polar_data.py'
+      - name: Build atlas and verify no-data interpolation
         run: |
-          "$RUNNER_TEMP/blender/bin/python" tools/prepare_polar_data.py
           "$RUNNER_TEMP/blender/bin/python" tools/build_atlas.py --polar-map
           "$RUNNER_TEMP/blender/bin/python" tests/test_dem_nodata.py
       - name: Render and reopen three Blender examples
+        if: steps.terrain-cache.outputs.cache-hit != 'true'
         run: '"$RUNNER_TEMP/blender/bin/python" examples/polar_sites.py'
+      - name: Render missing previews from released examples
+        if: steps.terrain-cache.outputs.cache-hit != 'true'
+        run: '"$RUNNER_TEMP/blender/bin/python" examples/render_atlas_previews.py'
+      - name: Save completed terrain and render cache
+        if: steps.terrain-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            lunar_terrain/data/*.npz
+            examples/*Mouton.blend
+            examples/Nobile_Rim_2.blend
+            examples/Malapert_Massif.blend
+            examples/renders/
+            build/polar_sources/validation.json
+            build/polar_examples/
+            build/atlas/Legacy_Previews_validation.json
+          key: ${{ steps.terrain-cache.outputs.cache-primary-key }}
       - name: Install Chromium test runtime
         run: |
           npm install --prefix "$RUNNER_TEMP/browser" playwright@1.62.1

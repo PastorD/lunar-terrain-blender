@@ -12,6 +12,8 @@ def main():
     for name in ('VIPER_Mons_Mouton','Nobile_Rim_2','Malapert_Massif'):
         validation=ROOT/'build/polar_examples'/(name+'_validation.json');result=json.loads(validation.read_text());assert result['passed'] and not result['draft']
         for source in (ROOT/'examples'/(name+'.blend'),ROOT/'examples/renders'/(name+'.png'),validation):shutil.copy2(source,OUT/source.name)
+    for name in ('Apollo17_Surface','Rock_Detail','Hapke_Opposition_Check'):shutil.copy2(ROOT/'examples/renders'/(name+'.png'),OUT/(name+'.png'))
+    shutil.copy2(ROOT/'build/atlas/Legacy_Previews_validation.json',OUT/'Legacy_Previews_validation.json')
     records=[];archive=OUT/f'lunar-terrain-data-{version}.zip'
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted((ROOT/'lunar_terrain/data').rglob('*')):

@@ -1,6 +1,6 @@
 # Lunar Atlas and polar presets — 1.6.0
 
-Open [Lunar Atlas](docs/index.html) locally in a browser. Eight locations have
+Open [Lunar Atlas](https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.6.0/Lunar_Atlas.html) locally in a browser. Eight locations have
 real image references, Blender renders, source attribution and scene downloads.
 The global map and south-polar inset select the same location cards. The HTML is
 also bundled in **N → Lunar → Open Lunar Atlas**. Images require internet access.
@@ -59,7 +59,9 @@ Unvisited polar regions use orbital photographs or mosaics in the report, never
 claimed surface photographs. The images and renders do not have matched cameras.
 Old Apollo and Chang'e released scenes preserve earlier appearance-study geometry;
 rebuild them for the current 2 m / 4 m local grids. The report states that distinction.
-Existing Gazebo exports remain linked; no Gazebo validation is claimed for the
+Missing previews for Apollo surface, rock detail and the opposition test are
+rendered from the checksum-pinned existing Blender files without rebuilding their
+geometry. Existing Gazebo exports remain linked; no Gazebo validation is claimed for the
 three new polar Blender examples.
 
 ## Reproduce
