@@ -1,0 +1,47 @@
+[
+  {
+    "blend": "Apollo17_Surface.blend",
+    "source_url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Apollo17_Surface.blend",
+    "source_sha256": "783d685ee45cf1dfe3a2f3a15d1af142b02b8929287bbaf62b49a2a8f87f918e",
+    "preview": "Apollo17_Surface.png",
+    "blender": "5.2.1 LTS",
+    "camera": "Lunar \u2022 surface camera",
+    "render_size": [
+      1600,
+      1600
+    ],
+    "samples": 48,
+    "geometry_unchanged": true,
+    "passed": true
+  },
+  {
+    "blend": "Hapke_Opposition_Check.blend",
+    "source_url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Hapke_Opposition_Check.blend",
+    "source_sha256": "dfb0d2f2020a7686773b6d00c6ee963a389d8deb95f05a89b2cda7ac34a424b6",
+    "preview": "Hapke_Opposition_Check.png",
+    "blender": "5.2.1 LTS",
+    "camera": "Phase sweep camera",
+    "render_size": [
+      1600,
+      900
+    ],
+    "samples": 48,
+    "geometry_unchanged": true,
+    "passed": true
+  },
+  {
+    "blend": "Rock_Detail.blend",
+    "source_url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Rock_Detail.blend",
+    "source_sha256": "fd99e651d5d5c396d4807008c77517902ec76895b7785c3d47796bdfcf2f603e",
+    "preview": "Rock_Detail.png",
+    "blender": "5.2.1 LTS",
+    "camera": "Lunar \u2022 surface camera",
+    "render_size": [
+      1600,
+      1200
+    ],
+    "samples": 48,
+    "geometry_unchanged": true,
+    "passed": true
+  }
+]

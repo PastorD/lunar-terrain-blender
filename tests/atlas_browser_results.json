@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "browser": "151.0.7922.34",
+  "checked": "2026-11-12T13:53:57.754Z",
+  "local_preview_routes": true,
+  "locations": [
+    {
+      "site": "apollo17",
+      "images": {
+        "photo": {
+          "width": 492,
+          "height": 515,
+          "url": "https://eol.jsc.nasa.gov/DatabaseImages/ISD/lowres/AS17/AS17-147-22527.JPG"
+        },
+        "render": {
+          "width": 1600,
+          "height": 1600,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.6.0/Apollo17_Surface.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "change6",
+      "images": {
+        "photo": {
+          "width": 1660,
+          "height": 872,
+          "url": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2024/06/chang_e-6_landing_site_on_the_far_side_of_the_moon/26133503-1-eng-GB/277126/image-thumb__277126__fit_large/Chang_e-6_landing_site_on_the_far_side_of_the_Moon.fff4c010.webp"
+        },
+        "render": {
+          "width": 1280,
+          "height": 960,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/ChangE6_Surface.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "blueghost",
+      "images": {
+        "photo": {
+          "width": 1440,
+          "height": 1080,
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/03/54359866846-dc14b1ff34-o.jpg?w=1440"
+        },
+        "render": {
+          "width": 1440,
+          "height": 810,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/BlueGhost_Surface.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "chandrayaan3",
+      "images": {
+        "photo": {
+          "width": 1125,
+          "height": 1125,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Chandrayaan-3_%E2%80%93_Image_of_Vikram_lander_on_lunar_surface_taken_by_Pragyan_rover_navcam_at_1104_IST%2C_30_August_2023_from_15_meters_away_%28without_text%29.webp"
+        },
+        "render": {
+          "width": 1024,
+          "height": 1024,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.5.0/Chandrayaan3_Surface.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "moonbase",
+      "images": {
+        "photo": {
+          "width": 1100,
+          "height": 1100,
+          "url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/1130/content_M1348682369_LRmos.warp.str01.shrunk6x.1100x1100.png"
+        },
+        "render": {
+          "width": 1600,
+          "height": 900,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/moonbase-v1.0.0/NASA_MoonBase_Connecting_Ridge.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "viper",
+      "images": {
+        "photo": {
+          "width": 600,
+          "height": 452,
+          "url": "https://data.lroc.im-ldi.com/ptif/bounding_square/1000//ser/estore/lroc/web/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_ROI/MOUTNPLTLOE/NAC_ROI_MOUTNPLTLOE_P843S0306.PYR.TIF"
+        },
+        "render": {
+          "width": 1600,
+          "height": 900,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.6.0/VIPER_Mons_Mouton.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "nobile2",
+      "images": {
+        "photo": {
+          "width": 625,
+          "height": 625,
+          "url": "https://data.lroc.im-ldi.com/ptif/bounding_square/1000//ser/estore/lroc/web/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_ROI/NOBILE02LOB/NAC_ROI_NOBILE02LOB_P839S0587.PYR.TIF"
+        },
+        "render": {
+          "width": 1600,
+          "height": 900,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.6.0/Nobile_Rim_2.png"
+        }
+      },
+      "location_download": true
+    },
+    {
+      "site": "malapert",
+      "images": {
+        "photo": {
+          "width": 1100,
+          "height": 1100,
+          "url": "https://lroc.im-ldi.com/ckeditor_assets/pictures/1273/content_M1432398306_LRmos.warp.str01.MALAPERT.1100x1100.png"
+        },
+        "render": {
+          "width": 1600,
+          "height": 900,
+          "url": "https://github.com/PastorD/lunar-terrain-blender/releases/download/v1.6.0/Malapert_Massif.png"
+        }
+      },
+      "location_download": true
+    }
+  ],
+  "projection_checks": {
+    "centre": [
+      300,
+      300
+    ],
+    "north": [
+      300,
+      55
+    ],
+    "east": [
+      545,
+      300
+    ],
+    "origin": [
+      500,
+      250
+    ]
+  },
+  "keyboard_map_selection": true,
+  "mobile_no_overflow": true,
+  "hash_reload": true
+}

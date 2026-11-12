@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "blender": "5.2.1 LTS",
+  "draft": false,
+  "native_dem_grid_m": 4.0,
+  "terrain_diameter_m": 40000,
+  "hapke_materials": 2,
+  "generation": {
+    "dem_sources_at_origin": [
+      {
+        "title": "Adjusted LOLA Site23 5 m",
+        "posting_m": 5.0,
+        "centre_weight": 0.7304211576485523,
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif",
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing"
+      },
+      {
+        "title": "LROC NAC MALAPERT02",
+        "posting_m": 4.0,
+        "centre_weight": 0.2695788423514477,
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MALAPERT02/NAC_DTM_MALAPERT02_P854S3591.IMG",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+      }
+    ],
+    "warnings": [],
+    "dem_resolution": {
+      "latitude": -85.99479675292969,
+      "longitude_east": 359.76422119140625,
+      "available_at_origin": {
+        "id": "MALAPERT02",
+        "title": "LROC NAC MALAPERT02",
+        "kind": "nac",
+        "posting_m": 4.0,
+        "page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_MALAPERT02",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "completion": "2024-06-15"
+      },
+      "loaded_at_origin": [
+        {
+          "title": "Adjusted LOLA Site23 5 m",
+          "posting_m": 5.0,
+          "centre_weight": 0.7304211576485523,
+          "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif",
+          "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing"
+        },
+        {
+          "title": "LROC NAC MALAPERT02",
+          "posting_m": 4.0,
+          "centre_weight": 0.2695788423514477,
+          "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MALAPERT02/NAC_DTM_MALAPERT02_P854S3591.IMG",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+        }
+      ],
+      "focus_xy_m": [
+        0.0,
+        0.0
+      ],
+      "focus_latitude": -85.99479675292972,
+      "focus_longitude": 359.76422119140625,
+      "loaded_at_focus": [
+        {
+          "title": "Adjusted LOLA Site23 5 m",
+          "posting_m": 5.0,
+          "centre_weight": 0.7304211576693808,
+          "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif",
+          "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing"
+        },
+        {
+          "title": "LROC NAC MALAPERT02",
+          "posting_m": 4.0,
+          "centre_weight": 0.26957884233061924,
+          "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MALAPERT02/NAC_DTM_MALAPERT02_P854S3591.IMG",
+          "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics."
+        }
+      ],
+      "radius_m": 20000.0,
+      "perimeter_grids_m": [
+        473.8
+      ],
+      "perimeter_samples": 24,
+      "meaning": "Native grid spacing, not effective resolution or procedural mesh spacing. Perimeter uses 24 samples, not a coverage guarantee."
+    },
+    "vertices": 546261,
+    "triangles": 1092348,
+    "craters": 1084,
+    "artist_micro_craters": 460,
+    "latitude": -85.99479675292969,
+    "longitude_east": 359.76422119140625,
+    "origin_elevation_m": 4783.952653510169,
+    "near_spacing_m": 0.11999999731779099,
+    "outer_radius_m": 20000.0,
+    "seed": 20261113,
+    "detail_focus_xy_m": [
+      0.0,
+      0.0
+    ],
+    "rocks": 11206,
+    "rock_coverage_k": 0.0017900000512599944,
+    "rock_zones": [
+      {
+        "min_diameter_m": 0.02500000037252903,
+        "max_diameter_m": 0.2,
+        "radius_m": 33.599999999999994,
+        "number_density_per_m2": 0.40005239382960656,
+        "instances": 1424
+      },
+      {
+        "min_diameter_m": 0.2,
+        "max_diameter_m": 1.5,
+        "radius_m": 144.0,
+        "number_density_per_m2": 0.0061665769838652575,
+        "instances": 427
+      },
+      {
+        "min_diameter_m": 0.005,
+        "max_diameter_m": 0.025,
+        "radius_m": 19.200000000000003,
+        "number_density_per_m2": 8.0,
+        "instances": 9355,
+        "basis": "Artist-authored, not a measured site population"
+      }
+    ],
+    "mission_context": {
+      "name": "South pole / Malapert Massif",
+      "latitude": -85.9948,
+      "longitude": 359.76422,
+      "grid_m": 4.0,
+      "sun_elevation": 5.3,
+      "sun_azimuth": 0.0,
+      "camera_heading": 100.0,
+      "source": "https://ntrs.nasa.gov/citations/20250002845",
+      "role": "NASA R23 regional reference point; distinct from IM-1",
+      "status": "Candidate region in NASA October 2024 shortlist; not an assigned landing site",
+      "checked": "2026-11-12",
+      "photometry": "Apollo 17 regional Hapke analogue, not a polar fit",
+      "lighting": "Illustrative manual Sun, not dated ephemeris",
+      "geometry": "Real DEM plus synthetic sub-resolution rocks, craterlets and regolith",
+      "hardware": "Terrain study only; no official rover, lander or base architecture"
+    },
+    "sampled_solar_horizon": {
+      "azimuth_deg": 0.0,
+      "elevation_deg": 4.308665724068607,
+      "sun_elevation_deg": 5.3,
+      "disc_above_sampled_horizon": true,
+      "scope": "DEM-only radial profile at 1.8 m within 20 km; not an illumination forecast"
+    }
+  },
+  "sampled_solar_horizon": {
+    "azimuth_deg": 0.0,
+    "elevation_deg": 4.308665724068607,
+    "sun_elevation_deg": 5.3,
+    "disc_above_sampled_horizon": true,
+    "scope": "DEM-only radial profile at 1.8 m within 20 km; not an illumination forecast"
+  },
+  "reopened_saved_scene": true,
+  "render_size": [
+    1600,
+    900
+  ],
+  "samples": 64,
+  "scope": "Official Linux bpy 5.2.1 CPU Cycles; GUI/GPU and Gazebo not tested for this example"
+}

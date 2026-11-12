@@ -1,5 +1,5 @@
 {
-  "prepared_for": "Lunar Terrain 1.5.0",
+  "prepared_for": "Lunar Terrain 1.6.0",
   "data_packs": [
     {
       "file": "Apollo17_SLDEM_512.npz",
@@ -233,6 +233,92 @@
       }
     },
     {
+      "file": "native_72e1df8a8fad954800e56fb4.npz",
+      "bytes": 2378021,
+      "sha256": "78f43a558d803fc2ab5f2ff93f17711950a4828835bb83033693062ab0e998e9",
+      "shape": [
+        1274,
+        1534
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "e0e27693866369df5ce27b7a2c1a15d03df03b881a266d1fc39eae35ef2cd56d",
+      "metadata": {
+        "projection": "south_polar",
+        "pixel_m": 3.0,
+        "posting_m": 3.0,
+        "width": 1534,
+        "height": 1274,
+        "west": 70540.5,
+        "north": 120601.5,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "scale": 1.0,
+        "title": "LROC NAC NOBILE01",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/NOBILE01/NAC_DTM_NOBILE01_P848S0301.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_NOBILE01",
+        "source_id": "NOBILE01",
+        "source_rows": [
+          12662,
+          13936
+        ],
+        "source_columns": [
+          32,
+          1566
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_766a0d81e9c285f7502669e0.npz",
+      "bytes": 2822822,
+      "sha256": "0f1f2797fc44f42f1fdadbb0996a08328c558a85c54b08b483b29f752cb86430",
+      "shape": [
+        948,
+        948
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "fd5d19efcc14031a19b51f7742bd537758aa569f554e3bef6a9faf269414be5a",
+      "metadata": {
+        "projection": "south_polar",
+        "west": 154630.0,
+        "north": 97370.0,
+        "pixel_m": 5.0,
+        "posting_m": 5.0,
+        "width": 948,
+        "height": 948,
+        "scale": 1.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "title": "Adjusted LOLA DM2 5 m",
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/DM2/DM2_final_adj_5mpp_surf.tif",
+        "source_page": "https://pgda.gsfc.nasa.gov/products/78",
+        "source_id": "DM2",
+        "source_sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604",
+        "resampling": "None: original native cells",
+        "blend_pixels": 16.0,
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing",
+        "source_rows": [
+          1526,
+          2474
+        ],
+        "source_columns": [
+          1526,
+          2474
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
       "file": "native_830fa43805986d65546c48a8.npz",
       "bytes": 9619593,
       "sha256": "4202399264b8977658673696ea00568b86ed7a8d82e41575b0e3022529d74141",
@@ -270,6 +356,49 @@
         "resampling": "None: original native cells",
         "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
         "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_8e5bf596bd3c6d623b7bb622.npz",
+      "bytes": 2559847,
+      "sha256": "db027caf4c6b6ae6b4ea627fa62fc2b1b6553cc35967a05207b1c1a4fdb0fa74",
+      "shape": [
+        946,
+        946
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "9faffa3806742902ff17ccdd112f1e447757cfb093c544783a688b9c616839ed",
+      "metadata": {
+        "projection": "south_polar",
+        "west": 70475.0,
+        "north": 120665.0,
+        "pixel_m": 5.0,
+        "posting_m": 5.0,
+        "width": 946,
+        "height": 946,
+        "scale": 1.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "title": "Adjusted LOLA Site20 5 m",
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site20/Site20_final_adj_5mpp_surf.tif",
+        "source_page": "https://pgda.gsfc.nasa.gov/products/78",
+        "source_id": "Site20",
+        "source_sha256": "e51451f3629ba7cd5cfc1b32c8c0ee3c5c454607488b00ea00cd06a9e301a892",
+        "resampling": "None: original native cells",
+        "blend_pixels": 16.0,
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing",
+        "source_rows": [
+          1067,
+          2013
+        ],
+        "source_columns": [
+          1095,
+          2041
+        ],
         "schema": 1,
         "radius_m": 1737400.0,
         "vertical_units": "metres above 1737400 m sphere"
@@ -356,6 +485,296 @@
         "resampling": "None: original native cells",
         "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
         "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_deab7f8f8bdc5c6287ad147b.npz",
+      "bytes": 2511497,
+      "sha256": "32c7503f2500563e3c30b59632c024cd258ee883e1f6d8c73556067db70357eb",
+      "shape": [
+        946,
+        946
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "d1ffd621bae15d12f205e0dbd541d20b47b27a8e17a53b84357b2ce55ec0054b",
+      "metadata": {
+        "projection": "south_polar",
+        "west": -2865.0,
+        "north": 123865.0,
+        "pixel_m": 5.0,
+        "posting_m": 5.0,
+        "width": 946,
+        "height": 946,
+        "scale": 1.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "title": "Adjusted LOLA Site23 5 m",
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif",
+        "source_page": "https://pgda.gsfc.nasa.gov/products/78",
+        "source_id": "Site23",
+        "source_sha256": "12d280a59cd7580415f6bada638d0abe025ce6727541fddf68d5dc371a6c94cf",
+        "resampling": "None: original native cells",
+        "blend_pixels": 16.0,
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing",
+        "source_rows": [
+          1627,
+          2573
+        ],
+        "source_columns": [
+          1627,
+          2573
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "native_e71134e896dd419e2a5f25d1.npz",
+      "bytes": 1230416,
+      "sha256": "43a7050a398f997305543a19167ee91849839074153777b625baa34589127aac",
+      "shape": [
+        659,
+        872
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "f85e4c5b3dcdb79aa9c0778bee3fed1d0f6067c758a935c09f263558a7996ca3",
+      "metadata": {
+        "projection": "south_polar",
+        "pixel_m": 4.0,
+        "posting_m": 4.0,
+        "width": 872,
+        "height": 659,
+        "west": -2834.0,
+        "north": 123834.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "scale": 1.0,
+        "title": "LROC NAC MALAPERT02",
+        "source_url": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/SDP/NAC_DTM/MALAPERT02/NAC_DTM_MALAPERT02_P854S3591.IMG",
+        "source_page": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_MALAPERT02",
+        "source_id": "MALAPERT02",
+        "source_rows": [
+          8028,
+          8687
+        ],
+        "source_columns": [
+          446,
+          1318
+        ],
+        "blend_pixels": 16.0,
+        "resampling": "None: original native cells",
+        "effective_resolution": "Stereo DEM grid; effective resolution and vertical precision vary. Consult product readme and stereo error metrics.",
+        "requested_radius_m": 2200,
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "polar_MALAPERT_context80.npz",
+      "bytes": 230528,
+      "sha256": "21ca9b35a81900586227a51f636f70d95333f9cc18343befa5edb85570b98bd0",
+      "shape": [
+        262,
+        262
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "0e00cfb9c5cf063b9282ffdf369ad7d1d0527b3b236485391ac3de4c3dfb8038",
+      "metadata": {
+        "projection": "south_polar",
+        "west": -11000.0,
+        "north": 132000.0,
+        "pixel_m": 80.0,
+        "posting_m": 80.0,
+        "width": 262,
+        "height": 262,
+        "scale": 1.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "title": "Adjusted LOLA Site23 regional context (80 m)",
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif",
+        "source_page": "https://pgda.gsfc.nasa.gov/products/78",
+        "source_id": "Site23",
+        "source_sha256": "12d280a59cd7580415f6bada638d0abe025ce6727541fddf68d5dc371a6c94cf",
+        "resampling": "16 by 16 native 5 m cells averaged to 80 m",
+        "blend_pixels": 16.0,
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "polar_NOBILE2_context80.npz",
+      "bytes": 220253,
+      "sha256": "3009168d203563f7982db027a8613fa55e0fcfd989e19129de8f85ddab6e9734",
+      "shape": [
+        250,
+        250
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "9c7294a47df616ba958326d922bd0cf451bf766a13439698027b84b86db93fd9",
+      "metadata": {
+        "projection": "south_polar",
+        "west": 147000.0,
+        "north": 105000.0,
+        "pixel_m": 80.0,
+        "posting_m": 80.0,
+        "width": 250,
+        "height": 250,
+        "scale": 1.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "title": "Adjusted LOLA DM2 regional context (80 m)",
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/DM2/DM2_final_adj_5mpp_surf.tif",
+        "source_page": "https://pgda.gsfc.nasa.gov/products/78",
+        "source_id": "DM2",
+        "source_sha256": "d88677c21633683061117db0a577f0510e0948fe9db315d13be28782407ff604",
+        "resampling": "16 by 16 native 5 m cells averaged to 80 m",
+        "blend_pixels": 16.0,
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "polar_VIPER_context80.npz",
+      "bytes": 130932,
+      "sha256": "9dbddd47ddce19043fd3cc13badd0fc568972d44944c2ffee7c409eec6242bb6",
+      "shape": [
+        200,
+        200
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "c6a2294b3e6caee3a32edcd6d9ae2ca7e58bc0557f8f594965737a2f371b5217",
+      "metadata": {
+        "projection": "south_polar",
+        "west": 65000.0,
+        "north": 126000.0,
+        "pixel_m": 80.0,
+        "posting_m": 80.0,
+        "width": 200,
+        "height": 200,
+        "scale": 1.0,
+        "standard_parallel": -90.0,
+        "origin_latitude": 0.0,
+        "central_longitude": 0.0,
+        "title": "Adjusted LOLA Site20 regional context (80 m)",
+        "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site20/Site20_final_adj_5mpp_surf.tif",
+        "source_page": "https://pgda.gsfc.nasa.gov/products/78",
+        "source_id": "Site20",
+        "source_sha256": "e51451f3629ba7cd5cfc1b32c8c0ee3c5c454607488b00ea00cd06a9e301a892",
+        "resampling": "16 by 16 native 5 m cells averaged to 80 m",
+        "blend_pixels": 16.0,
+        "effective_resolution": "5 m interpolated LOLA grid; resolving power varies with laser-track spacing",
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "region_34481dcc6210a30c499f.npz",
+      "bytes": 5557638,
+      "sha256": "d2d2f82eaf50dad42f7d3287345d9bcb53e3e6cb2fc949feace7d291dcde32f0",
+      "shape": [
+        134,
+        23040
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "f985e83c24955c8094762059437df5d9f95ab975be86b86edf3ceb6fe1fa0bac",
+      "metadata": {
+        "title": "LOLA LDEM_64 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": -84.375,
+        "ppd": 64,
+        "scale": 1.0,
+        "posting_m": 473.8,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+        "source_rows": [
+          11160,
+          11294
+        ],
+        "source_columns": [
+          0,
+          23040
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "region_48ab048b5cc373c4d9b5.npz",
+      "bytes": 5441419,
+      "sha256": "2d32377a8cc5d46d360bc9f16741105672977097f422ebf8dfe14d3c179bd78d",
+      "shape": [
+        134,
+        23040
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "e5d7ea6714ec5850c82392689cda5b655b626ec2fabb8063b64a08fe4676a63e",
+      "metadata": {
+        "title": "LOLA LDEM_64 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": -84.953125,
+        "ppd": 64,
+        "scale": 1.0,
+        "posting_m": 473.8,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+        "source_rows": [
+          11197,
+          11331
+        ],
+        "source_columns": [
+          0,
+          23040
+        ],
+        "schema": 1,
+        "radius_m": 1737400.0,
+        "vertical_units": "metres above 1737400 m sphere"
+      }
+    },
+    {
+      "file": "region_665cf8f2808875de200b.npz",
+      "bytes": 5862478,
+      "sha256": "63cbfba9d5dc501772855d783203bf0cbf6d81234f9faa76545b016e4ff4b52c",
+      "shape": [
+        134,
+        23040
+      ],
+      "dtype": "float32",
+      "elevation_array_sha256": "526e6e96f183bf965be4326edc15e150fa73d8a40149e30e69528c2c511d4879",
+      "metadata": {
+        "title": "LOLA LDEM_64 v3.1",
+        "projection": "cylindrical",
+        "west": 0.0,
+        "north": -82.90625,
+        "ppd": 64,
+        "scale": 1.0,
+        "posting_m": 473.8,
+        "periodic": true,
+        "source_url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_64.IMG",
+        "source_rows": [
+          11066,
+          11200
+        ],
+        "source_columns": [
+          0,
+          23040
+        ],
         "schema": 1,
         "radius_m": 1737400.0,
         "vertical_units": "metres above 1737400 m sphere"

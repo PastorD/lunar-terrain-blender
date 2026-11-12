@@ -1,10 +1,10 @@
 {
   "blender": "5.2.1 LTS",
-  "python": "3.13.15",
-  "numpy": "2.5.3",
-  "archive": "lunar_terrain-1.5.0.zip",
-  "archive_sha256": "99e9743d6767e78ddf467f64dbf6c9a195eb3df90bd5c6d4d9bba18eccfba8b3",
-  "addon_version": "1.5.0",
+  "python": "3.13.18",
+  "numpy": "2.5.4",
+  "archive": "lunar_terrain-1.6.0.zip",
+  "archive_sha256": "9dd482d552d9977d5e1fcc5b49d9506dd44ccd1ec0cc75602ace61f8a6957729",
+  "addon_version": "1.6.0",
   "minimum_blender": "5.2.0",
   "installed_via": "bpy.ops.extensions.package_install_files",
   "extension_namespace": "bl_ext.repository.lunar_terrain",
@@ -49,6 +49,42 @@
       "passed": true
     },
     {
+      "site": "MOONBASE",
+      "triangles": 10408,
+      "origin_elevation_m": 1945.7947293899995,
+      "outpost": false,
+      "native_grid_m": 2.0,
+      "finite_40km_transect": true,
+      "passed": true
+    },
+    {
+      "site": "VIPER",
+      "triangles": 10408,
+      "origin_elevation_m": 6417.560584995907,
+      "outpost": false,
+      "native_grid_m": 5.0,
+      "finite_40km_transect": true,
+      "passed": true
+    },
+    {
+      "site": "NOBILE2",
+      "triangles": 10408,
+      "origin_elevation_m": 1009.6775713293856,
+      "outpost": false,
+      "native_grid_m": 5.0,
+      "finite_40km_transect": true,
+      "passed": true
+    },
+    {
+      "site": "MALAPERT",
+      "triangles": 10408,
+      "origin_elevation_m": 4783.952653510169,
+      "outpost": false,
+      "native_grid_m": 4.0,
+      "finite_40km_transect": true,
+      "passed": true
+    },
+    {
       "site": "CH3",
       "triangles": 10408,
       "origin_elevation_m": 532.4955969316695,
@@ -59,17 +95,19 @@
     }
   ],
   "passed": true,
-  "restricted_registration_calls": 53,
+  "restricted_registration_calls": 58,
   "restricted_data_type": "_RestrictData",
   "restricted_context_type": "_RestrictContext",
   "wheel_module_alias_bridged": true,
   "online_access": false,
   "upgrade": {
-    "from_version": "1.4.0",
-    "from_sha256": "d4591d35c46ec142b78162d6d36ea18906eed9b39a2a3473bd51775c2de4d674",
+    "from_version": "1.5.0",
+    "from_sha256": "99e9743d6767e78ddf467f64dbf6c9a195eb3df90bd5c6d4d9bba18eccfba8b3",
     "settings_retained": true,
     "cache_retained": true,
     "idle": true
   },
+  "atlas_import": true,
+  "rejected_unknown_location": true,
   "scope": "Linux, official bpy module, headless CPU; no interactive UI or GPU validation"
 }

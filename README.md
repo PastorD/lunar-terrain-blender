@@ -115,7 +115,7 @@ blender --command extension build --source-dir lunar_terrain --output-filepath l
 
 The download helper uses Python's standard library, checks the pinned SHA-256 and verifies every data member. For an offline build, download `lunar-terrain-data-1.6.0.zip` from the release and run `python3 tools/fetch_release_data.py --archive /path/to/lunar-terrain-data-1.6.0.zip`.
 
-The 1.6 workflow validates Linux bpy 5.2.1 installation, disable/re-enable, upgrade from 1.5.0, all nine presets offline, atlas import, three rendered/reopened polar scenes and Chromium report interaction. See the released validation records for completed results. They do not claim interactive UI, GPU, Windows or macOS validation. See [validation records](tests/install_results.json).
+The [1.6 release validation run](https://github.com/PastorD/lunar-terrain-blender/actions/runs/43231559761) passed Linux bpy 5.2.1 installation, disable/re-enable, upgrade from 1.5.0, all nine presets offline, atlas import, three rendered/reopened polar scenes and Chromium report interaction. The browser checks cover all eight real-image/render pairs, both maps, keyboard selection, location downloads and mobile layout. See [Blender validation](tests/install_results.json), [upgrade validation](tests/install_upgrade_results.json) and [browser validation](tests/atlas_browser_results.json). These checks do not claim interactive Blender UI, GPU, Windows or macOS validation.
 
 ## License and attribution
 
