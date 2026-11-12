@@ -1,4 +1,4 @@
-# Lunar Terrain 1.5.0
+# Lunar Terrain 1.6.0
 
 A Blender 5.2+ extension for choosing a lunar latitude and longitude, sampling real elevation data, and building continuous terrain with progressively coarser geometry toward the horizon. It adds angular rocks, degraded craters, granular regolith, Sun-linked Hapke opposition shading, and an optional editable rover and moon base.
 
@@ -14,11 +14,13 @@ Version **1.3.2** corrects extension-manifest validation and uses Blender’s of
 
 Version **1.4.0** adds **Blue Ghost 1 / Mare Crisium** and a **Blue Ghost references** appearance. It bundles a local 3 m LROC grid and wider SLDEM2015 context. See [BLUE_GHOST.md](BLUE_GHOST.md) for colour, illumination, parameters and the rendered study.
 
-Version **1.5.0** adds **Chandrayaan-3 / Shiv Shakti**, a neutral **Pragyan NavCam** appearance, a linked public-photo catalogue, native 3 m terrain, and **Soil texture relief**. It corrects polar true-scale latitude handling. See [CHANDRAYAAN3.md](CHANDRAYAAN3.md).
+Version **1.6.0** adds an interactive Lunar Atlas, location JSON import and four polar presets. See [POLAR_SITES.md](POLAR_SITES.md).
+
+Version **1.5.0** added **Chandrayaan-3 / Shiv Shakti**, a neutral **Pragyan NavCam** appearance, a linked public-photo catalogue, native 3 m terrain, and **Soil texture relief**. It corrects polar true-scale latitude handling. See [CHANDRAYAAN3.md](CHANDRAYAAN3.md).
 
 ## Install and use
 
-1. Use Blender **5.2 or newer** (tested in 5.2.1 LTS). Open **Edit → Preferences → Get Extensions**, open its menu, and choose **Install from Disk**. Select `lunar_terrain-1.5.0.zip` and enable Lunar Terrain.
+1. Use Blender **5.2 or newer** (tested in 5.2.1 LTS). Open **Edit → Preferences → Get Extensions**, open its menu, and choose **Install from Disk**. Select `lunar_terrain-1.6.0.zip` and enable Lunar Terrain.
 2. Start with an empty scene for a clean view. In the 3D View, press **N** and open the **Lunar** tab.
 3. Choose a preset and click **Apply location and look**, or enter planetocentric latitude and east-positive longitude. Negative west longitudes are accepted.
 4. Set terrain radius, near detail radius and near mesh spacing. Click **Build / Rebuild Lunar Terrain**. Press **F12** to render.

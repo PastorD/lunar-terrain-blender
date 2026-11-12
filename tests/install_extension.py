@@ -48,7 +48,7 @@ def run():
     assert addon_utils.check(name)==(True,True)
     assert addon.bpy is bpy, 'Test must restrict the bpy module used by the installed extension'
     manifest=tomllib.loads((Path(addon.__file__).parent/'blender_manifest.toml').read_text())
-    assert manifest['version']=='1.5.0' and manifest['blender_version_min']=='5.2.0'
+    assert manifest['version']==tomllib.loads((ROOT/'lunar_terrain/blender_manifest.toml').read_text())['version'] and manifest['blender_version_min']=='5.2.0'
     assert hasattr(bpy.types,'LUNAR_PT_main') and hasattr(bpy.types.Scene,'lunar_terrain')
     cache=Path(addon.cache_path());assert cache.is_dir()
     assert cache.is_relative_to(Path(profile.name))
@@ -63,7 +63,7 @@ def run():
         assert not bpy.context.scene.lunar_terrain.busy
         upgrade.update(settings_retained=True,cache_retained=True,idle=True)
     rows=[]
-    for site in ('APOLLO17','SOUTH','CE6','BLUEGHOST','CH3'):
+    for site in ('APOLLO17','SOUTH','CE6','BLUEGHOST','MOONBASE','VIPER','NOBILE2','MALAPERT','CH3'):
         s=bpy.context.scene;p=s.lunar_terrain;p.site=site
         assert bpy.ops.lunar.apply_preset()=={'FINISHED'}
         p.download_first=False;p.outer_radius=100;p.detail_radius=10;p.mesh_spacing=.5
@@ -71,7 +71,7 @@ def run():
         p.include_outpost=(site=='APOLLO17')
         assert bpy.ops.lunar.build()=={'FINISHED'}
         report=json.loads(p.stats)
-        expected={'APOLLO17':2.,'CE6':4.,'SOUTH':2.,'BLUEGHOST':3.,'CH3':3.}[site]
+        expected={'APOLLO17':2.,'CE6':4.,'SOUTH':2.,'BLUEGHOST':3.,'CH3':3.,'MOONBASE':2.,'VIPER':5.,'NOBILE2':5.,'MALAPERT':4.}[site]
         assert abs(min(v['posting_m'] for v in report['dem_resolution']['loaded_at_origin'])-expected)<1e-8
         local=addon.dem.TerrainDEM(p.latitude,p.longitude,cache)
         assert np.isfinite(local.height(np.linspace(-20000,20000,400),np.zeros(400))).all()
@@ -80,6 +80,19 @@ def run():
         assert report['triangles']>1000 and s.camera and s.world
         rows.append(dict(site=site,triangles=report['triangles'],origin_elevation_m=report['origin_elevation_m'],
                          outpost=p.include_outpost,native_grid_m=expected,finite_40km_transect=True,passed=True))
+    assert (Path(addon.__file__).parent/'data/Lunar_Atlas.html').is_file()
+    location=Path(profile.name)/'atlas-location.json'
+    for site in ('VIPER','MALAPERT','CH3'):
+        location.write_text(json.dumps(dict(schema='lunar-terrain-location-v1',preset=site)))
+        assert bpy.ops.lunar.import_location(filepath=str(location))=={'FINISHED'}
+        assert bpy.context.scene.lunar_terrain.site==site
+    for value in ({'schema':'wrong','preset':'VIPER'},{'schema':'lunar-terrain-location-v1','preset':'../../evil'},['VIPER']):
+        location.write_text(json.dumps(value))
+        try:
+            result=bpy.ops.lunar.import_location(filepath=str(location));assert result=={'CANCELLED'}
+        except RuntimeError as error:
+            assert 'location' in str(error).lower() or 'preset' in str(error).lower()
+        assert bpy.context.scene.lunar_terrain.site=='CH3'
     assert bpy.ops.lunar.update_rocks()=={'FINISHED'}
     assert bpy.ops.lunar.clear()=={'FINISHED'}
     addon_utils.disable(name,default_set=True)
@@ -96,7 +109,7 @@ def run():
                 restricted_registration_calls=len(RESTRICTED_CLASSES),
                 restricted_data_type='_RestrictData',restricted_context_type='_RestrictContext',
                 wheel_module_alias_bridged=WHEEL_ALIAS_DIFFERS,
-                online_access=False,upgrade=upgrade,
+                online_access=False,upgrade=upgrade,atlas_import=True,rejected_unknown_location=True,
                 scope='Linux, official bpy module, headless CPU; no interactive UI or GPU validation')
     assert len(RESTRICTED_CLASSES)==2*len(addon.CLASSES)+prior_class_count, 'Install, upgrade and re-enable must register under restriction'
     filename='install_upgrade_results.json' if upgrade else 'install_results.json'

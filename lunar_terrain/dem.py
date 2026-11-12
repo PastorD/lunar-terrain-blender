@@ -60,6 +60,30 @@ class Raster:
         if self._poles is None:self._poles=(float(np.nanmean(self.a[0]))*self.meta['scale'],float(np.nanmean(self.a[-1]))*self.meta['scale'])
         return self._poles
 
+    @property
+    def validity(self):
+        """Feather internal no-data edges into the next valid measured DEM.
+
+        Reserve two cells for the bicubic stencil, then ramp confidence over
+        sixteen valid cells. No extra dependency is needed inside Blender.
+        """
+        st=self.path.stat();key=('validity',str(self.path.resolve()),st.st_mtime_ns,st.st_size)
+        if key not in _ARRAY_CACHE:
+            a=self.a;valid=np.isfinite(a)&(np.abs(a*self.meta['scale'])<30000)
+            if valid.all():confidence=np.empty(0,dtype=np.float32)
+            else:
+                interior=valid.copy();distance=np.zeros(a.shape,np.float32)
+                for _ in range(18):
+                    distance+=interior
+                    padded=np.pad(interior,1,constant_values=True)
+                    for dy in range(3):
+                        for dx in range(3):interior&=padded[dy:dy+a.shape[0],dx:dx+a.shape[1]]
+                confidence=smooth(np.clip((distance-2)/16,0,1)).astype(np.float32)
+            _ARRAY_CACHE[key]=confidence
+        _ARRAY_CACHE.move_to_end(key);result=_ARRAY_CACHE[key]
+        while len(_ARRAY_CACHE)>1 and sum(v.nbytes for v in _ARRAY_CACHE.values())>384*1024**2:_ARRAY_CACHE.popitem(last=False)
+        return result
+
     def sample(self,lat,lon):
         m=self.meta;lat,lon=np.broadcast_arrays(np.asarray(lat,dtype=float),np.asarray(lon,dtype=float))
         px,py=remote_dem.project(m,lat,lon);pixel=1/m['ppd'] if m['projection']=='cylindrical' else m['pixel_m']
@@ -73,6 +97,8 @@ class Raster:
         w=smooth(edge/self.blend);keep=w>0;z=np.zeros_like(x,dtype=float)
         if np.any(keep):
             v=interpolate(self.a,x[keep],y[keep],periodic)*m['scale']
+            confidence=self.validity
+            if confidence.size:w[keep]*=np.clip(interpolate(confidence,x[keep],y[keep],periodic),0,1)
             if periodic:
                 rho=(90-np.abs(lat[keep]))*m['ppd'];polar=rho<.5
                 if np.any(polar):

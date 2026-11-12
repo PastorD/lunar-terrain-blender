@@ -1,0 +1,96 @@
+name: Build and publish Lunar Atlas 1.6
+on:
+  push:
+    branches: [main]
+    paths: ['lunar_terrain/sites.py', 'lunar_terrain/dem.py', 'docs/atlas-*', 'tools/*atlas*', 'tools/prepare_polar_data.py', 'examples/polar_sites.py', '.github/workflows/atlas-release.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lunar-atlas-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13'
+      - name: Install official Blender runtime
+        run: |
+          python -m venv "$RUNNER_TEMP/blender"
+          "$RUNNER_TEMP/blender/bin/python" -m pip install -r gazebo/requirements-blender.txt 'Pillow>=11,<13'
+      - name: Restore pinned base data
+        run: python tools/fetch_release_data.py
+      - name: Prepare native polar DEMs and build atlas
+        run: |
+          "$RUNNER_TEMP/blender/bin/python" tools/prepare_polar_data.py
+          "$RUNNER_TEMP/blender/bin/python" tools/build_atlas.py --polar-map
+          "$RUNNER_TEMP/blender/bin/python" tests/test_dem_nodata.py
+      - name: Render and reopen three Blender examples
+        run: '"$RUNNER_TEMP/blender/bin/python" examples/polar_sites.py'
+      - name: Install Chromium test runtime
+        run: |
+          npm install --prefix "$RUNNER_TEMP/browser" playwright@1.62.1
+          "$RUNNER_TEMP/browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Test report images, selection, imports and mobile layout
+        run: NODE_PATH="$RUNNER_TEMP/browser/node_modules" node tests/atlas_browser.cjs --local-previews
+      - name: Build and validate installable extension
+        run: '"$RUNNER_TEMP/blender/bin/python" tools/package_release.py --output-dir dist/atlas'
+      - name: Test fresh installation and all nine presets offline
+        run: '"$RUNNER_TEMP/blender/bin/python" tests/install_extension.py dist/atlas/lunar_terrain-1.6.0.zip'
+      - name: Test upgrade from 1.5.0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download v1.5.0 --pattern lunar_terrain-1.5.0.zip --dir "$RUNNER_TEMP/previous"
+          "$RUNNER_TEMP/blender/bin/python" tests/install_extension.py dist/atlas/lunar_terrain-1.6.0.zip --upgrade-from "$RUNNER_TEMP/previous/lunar_terrain-1.5.0.zip"
+      - name: Assemble verified release files
+        run: python tools/assemble_atlas_release.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lunar-atlas-1.6
+          path: dist/atlas/*
+          compression-level: 0
+          retention-days: 7
+          if-no-files-found: error
+      - name: Retain diagnostics
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lunar-atlas-failure
+          path: |
+            build/atlas/*
+            build/polar_examples/*.json
+            build/polar_sources/validation.json
+            tests/*results.json
+            examples/renders/*Mouton.png
+            examples/renders/Nobile_Rim_2.png
+            examples/renders/Malapert_Massif.png
+          retention-days: 7
+  release:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: lunar-atlas-1.6
+          path: dist/atlas
+      - name: Publish versioned atlas and extension
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd dist/atlas
+          sha256sum --check SHA256SUMS
+          cd ../..
+          if gh release view v1.6.0 >/dev/null 2>&1; then
+            echo 'Versioned release exists; validation remains in workflow artifacts.'
+          else
+            gh release create v1.6.0 dist/atlas/* --title 'Lunar Atlas and south-polar presets — 1.6.0' --notes-file POLAR_SITES.md --target "$GITHUB_SHA" --latest
+          fi

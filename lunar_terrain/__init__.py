@@ -4,7 +4,8 @@ import bpy,traceback,json
 from pathlib import Path
 from types import SimpleNamespace
 from bpy.props import FloatProperty,IntProperty,BoolProperty,StringProperty,EnumProperty,PointerProperty,FloatVectorProperty
-from . import dem,builder,appearance,catalog
+from bpy_extras.io_utils import ImportHelper
+from . import dem,builder,appearance,catalog,sites
 _active_job=None
 FIELDS=('appearance regolith_relief phase_b phase_c photometric_roughness shoe_amplitude shoe_width cboe_amplitude cboe_width soil_tint albedo_variation rock_albedo_ratio latitude longitude custom_dem outer_radius detail_radius mesh_spacing focus_mode curvature seed rock_coverage min_rock micro_density max_rocks crater_density micro_craters crater_depth roughness sun_azimuth sun_elevation sun_diameter sun_energy visible_sun opposition single_scattering_albedo exposure camera_height camera_heading camera_pitch camera_lens include_outpost setup_scene samples native_radius dem_budget_mb').split()
 def cache_path():
@@ -28,7 +29,7 @@ def location_changed(self,context):
     self.dem_report='{}';self.dem_download_report='{}';self.download_status=''
 
 class LUNAR_PG_settings(bpy.types.PropertyGroup):
-    site: EnumProperty(name='Location preset',items=[('APOLLO17','Apollo 17 / Taurus–Littrow','LROC NAC 2 m native grid available; Apollo-style surface'),('SOUTH','South pole / Connecting Ridge','LROC NAC 2 m where valid, adjusted LOLA 5 m and coarser context'),('CE6',"Chang’e-6 / Apollo basin",'LROC NAC 4 m native grid available and published analogue abundance'),('BLUEGHOST','Blue Ghost 1 / Mare Crisium','LROC NAC 3 m grid; cool reference appearance, low Sun and a view toward the shadow direction'),('CH3','Chandrayaan-3 / Shiv Shakti','LROC NAC 3 m grid; neutral Pragyan NavCam appearance, sparse fragments and rover-height framing')],default='APOLLO17')
+    site: EnumProperty(name='Location preset',items=[('APOLLO17','Apollo 17 / Taurus–Littrow','LROC NAC 2 m native grid available; Apollo-style surface'),('SOUTH','South pole / Connecting Ridge','LROC NAC 2 m where valid, adjusted LOLA 5 m and coarser context'),('CE6',"Chang’e-6 / Apollo basin",'LROC NAC 4 m native grid available and published analogue abundance'),('BLUEGHOST','Blue Ghost 1 / Mare Crisium','LROC NAC 3 m grid; cool reference appearance, low Sun and a view toward the shadow direction'),('CH3','Chandrayaan-3 / Shiv Shakti','LROC NAC 3 m grid; neutral Pragyan NavCam appearance, sparse fragments and rover-height framing')]+[(key,v['name'],v['role']) for key,v in sites.POLAR_SITES.items()],default='APOLLO17')
     latitude: FloatProperty(name='Latitude',description='Planetocentric degrees; north positive',default=20.1908,min=-90,max=90,precision=5,update=location_changed)
     longitude: FloatProperty(name='Longitude E',description='East-positive degrees; negative west longitudes accepted',default=30.7717,min=-360,max=360,precision=5,update=location_changed)
     custom_dem: StringProperty(name='Extra DEM pack',description='Optional georeferenced .npz from the supplied converter',subtype='FILE_PATH')
@@ -122,11 +123,13 @@ class LUNAR_OT_preset(bpy.types.Operator):
             p.sun_energy,p.sun_diameter,p.visible_sun=3.8,.53,True
             p.camera_heading,p.camera_pitch=90,-6
             p.camera_height,p.camera_lens=.65,51
+        elif p.site in sites.POLAR_SITES:
+            sites.apply(p,p.site)
         else:
             p.latitude,p.longitude=-41.6385,206.0148;p.rock_coverage,p.crater_density,p.crater_depth=.179,1,1;p.micro_density,p.micro_craters=0,0
             p.sun_elevation,p.sun_azimuth,p.exposure=15,300,1.3;p.camera_heading,p.camera_pitch=60,-8
-        appearance.apply(p,{'APOLLO17':'APOLLO','BLUEGHOST':'BLUEGHOST','CH3':'CH3'}.get(p.site,'CHANGE'))
-        p.status='Preset applied; build terrain to use it';return {'FINISHED'}
+        appearance.apply(p,'APOLLO' if p.site in sites.POLAR_SITES else {'APOLLO17':'APOLLO','BLUEGHOST':'BLUEGHOST','CH3':'CH3'}.get(p.site,'CHANGE'))
+        p.status=sites.POLAR_SITES[p.site]['role'] if p.site in sites.POLAR_SITES else 'Preset applied; build terrain to use it';return {'FINISHED'}
 
 class LUNAR_OT_appearance(bpy.types.Operator):
     bl_idname='lunar.apply_appearance';bl_label='Apply Reference Appearance';bl_options={'REGISTER','UNDO'}
@@ -249,6 +252,29 @@ class LUNAR_OT_photo_references(bpy.types.Operator):
     def execute(self,c):
         bpy.ops.wm.url_open(url=Path(__file__).with_name('data').joinpath('Chandrayaan3_References.html').as_uri());return {'FINISHED'}
 
+class LUNAR_OT_atlas(bpy.types.Operator):
+    bl_idname='lunar.atlas';bl_label='Open Lunar Atlas'
+    bl_description='Interactive location map, photographs and renders; images need internet'
+    def execute(self,c):
+        bpy.ops.wm.url_open(url=Path(__file__).with_name('data').joinpath('Lunar_Atlas.html').as_uri());return {'FINISHED'}
+
+class LUNAR_OT_import_location(bpy.types.Operator,ImportHelper):
+    bl_idname='lunar.import_location';bl_label='Import Atlas Location';bl_options={'REGISTER','UNDO'}
+    filename_ext='.json'
+    filter_glob:StringProperty(default='*.json',options={'HIDDEN'})
+    @classmethod
+    def poll(cls,c):return _active_job is None
+    def execute(self,c):
+        try:
+            path=Path(self.filepath)
+            if path.stat().st_size>16384:raise ValueError('Location JSON is too large')
+            known={v.identifier for v in c.scene.lunar_terrain.bl_rna.properties['site'].enum_items}
+            key=sites.location_from_json(json.loads(path.read_text()),known)
+        except (OSError,ValueError,TypeError) as error:
+            self.report({'ERROR'},str(error));return {'CANCELLED'}
+        c.scene.lunar_terrain.site=key
+        return bpy.ops.lunar.apply_preset()
+
 class LUNAR_OT_dem_report(bpy.types.Operator):
     bl_idname='lunar.dem_report';bl_label='Show DEM Source Report'
     def execute(self,c):
@@ -261,6 +287,8 @@ class LUNAR_PT_main(bpy.types.Panel):
     bl_label='Lunar Terrain';bl_idname='LUNAR_PT_main';bl_space_type='VIEW_3D';bl_region_type='UI';bl_category='Lunar'
     def draw(self,c):
         p=c.scene.lunar_terrain;l=self.layout;col=l.column();col.enabled=not p.busy
+        row=col.row(align=True);row.operator('lunar.atlas',icon='WORLD');row.operator('lunar.import_location',text='Import Location',icon='IMPORT')
+        if p.site in sites.POLAR_SITES:col.label(text='Polar Hapke: Apollo analogue',icon='INFO')
         col.prop(p,'site');col.operator('lunar.apply_preset',icon='WORLD');col.prop(p,'latitude');col.prop(p,'longitude');col.separator();col.operator('lunar.build',icon='MESH_GRID');col.prop(p,'download_first')
         if p.site=='CH3':col.operator('lunar.photo_references',icon='IMAGE_DATA')
         l.label(text=p.status[:70],icon='TIME' if p.busy else 'INFO')
@@ -304,7 +332,7 @@ class LUNAR_PT_photometry(Subpanel,bpy.types.Panel):
 class LUNAR_PT_scene(Subpanel,bpy.types.Panel):
     bl_idname='LUNAR_PT_scene';bl_label='Camera and outpost';bl_options={'DEFAULT_CLOSED'}
     def draw(self,c):self.fields(c,['camera_height','camera_heading','camera_pitch','camera_lens','include_outpost','setup_scene','samples']).operator('lunar.clear',icon='TRASH')
-CLASSES=(LUNAR_PG_settings,LUNAR_OT_inspect_dem,LUNAR_OT_dem_map,LUNAR_OT_photo_references,LUNAR_OT_dem_report,LUNAR_OT_preset,LUNAR_OT_appearance,LUNAR_OT_photometry,LUNAR_OT_build,LUNAR_OT_light,LUNAR_OT_clear,LUNAR_OT_rocks,LUNAR_PT_main,LUNAR_PT_dem,LUNAR_PT_ground,LUNAR_PT_light,LUNAR_PT_photometry,LUNAR_PT_scene)
+CLASSES=(LUNAR_PG_settings,LUNAR_OT_inspect_dem,LUNAR_OT_dem_map,LUNAR_OT_photo_references,LUNAR_OT_atlas,LUNAR_OT_import_location,LUNAR_OT_dem_report,LUNAR_OT_preset,LUNAR_OT_appearance,LUNAR_OT_photometry,LUNAR_OT_build,LUNAR_OT_light,LUNAR_OT_clear,LUNAR_OT_rocks,LUNAR_PT_main,LUNAR_PT_dem,LUNAR_PT_ground,LUNAR_PT_light,LUNAR_PT_photometry,LUNAR_PT_scene)
 def register():
     for cls in CLASSES:bpy.utils.register_class(cls)
     bpy.types.Scene.lunar_terrain=PointerProperty(type=LUNAR_PG_settings)
